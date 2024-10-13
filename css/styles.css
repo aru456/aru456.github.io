@@ -10997,6 +10997,8 @@ h3 {
   color: var(--bs-dark); /* Dark text color */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-bottom: 1rem;
+  max-height: 200px;
+  overflow:scroll;
 }
 
 .project-card:hover {
