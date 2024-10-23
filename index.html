@@ -14,6 +14,15 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4B7NW28DPN"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-4B7NW28DPN');
+        </script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -70,25 +79,39 @@
        
             
             <hr class="m-0" />
-            <!-- Experience-->
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
+                    <h2 class="mb-4">Experience</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Publicis Sapient </h3>
-                            <div class="subheading mb-3">Associate Software Development Engineer - 2</div>
-                            <div class="">PSStream | Video Streaming Platform fullstack</div>
+                            <h3 class="mb-0">Publicis Sapient</h3>
+                            <div class="subheading mb-2">Associate Software Development Engineer - 2</div>
+                            <p class="text-primary mb-1"><span class="large-font">PSStream</span> | Video Streaming Platform Fullstack</p>
                             <ul>
-                                <li>Developed critical features in a responsive web application PSStream for video streaming based on a user subscription model from scratch using agile methodologies, resulting in a streamlined user experience</li>
-                                <li>Engineered admin features, role-based authentication, and dashboards, by developing frontend UI and backend
-                                    APIs, enabling seamless access to video and user data reports, and a 40% increase in efficiency for data visualization</li>
+                                    <li>Developed critical features in a responsive web application PSStream for video streaming based on a user subscription model 
+                                        from scratch using agile methodologies, resulting in a streamlined user experience</li>
+                                    <li>Engineered role-based authentication and user-friendly responsive admin dashboards, menu, and efficient CRUD
+                                        APIs, achieving seamless access to video, and user data statistics that enhanced team productivity by 40%</li>
+                                    <li>Automated microservice deployment with Jenkins CI/CD, cutting deployment time from hours to minutes by
+                                        streamlining testing, building, and containerized deployment with Docker, EKS, ensuring faster, reliable releases</li>
+                                    <li>Reduced API response times by up to 30% through Redis caching for frequently accessed endpoints, and amplified
+                                        unit testing coverage from 70% to 90%, enhancing overall performance and reliability</li>
+                                    <p class="tech-stack mb-0">Tech Stack - Spring Boot, Java, React.js, PostgreSQL, RESTful APIs, AWS (EC2, K8s, S3), Docker, JUnit </p>
                             </ul>
-                            <div class="">Albertsons | Health and Wellness Application Backend</div>
+                            <p class="text-primary mb-1"><span class="large-font">Albertsons</span> | Health and Wellness Application Backend</p>
                             <ul>
-                                <li>Developed scalable backend services using Spring WebFlux to asynchronously store user-defined activity and nutritional goals. Leveraging a non-blocking architecture and reduced response time and improved user experience</li>
-                                
-                                <li>Authored unit and integration tests to validate backend performance and resilience under heavy workloads, identifying bugs and reducing post-release incidents by 25%, leading to smoother deployments and enhanced stability</li>
+                                <li>
+                                    Developed scalable backend services using Spring WebFlux to asynchronously store user-defined activity and nutritional goals. Leveraging a non-blocking architecture and reduced response time and improved user experience
+                                </li>
+                                <li>
+                                    Crafted reactive endpoints using WebFlux and GraphQL to automate goal signup, reminder emails via cron jobs,
+                                    and enable data retrieval with real-time updates, resulting in faster response times and improved data accuracy
+                                </li>
+                                <li>
+                                    Authored unit and integration tests to validate backend performance and resilience under heavy workloads, identifying 
+                                    bugs and reducing post-release incidents by 25%, leading to smoother deployments and enhanced stability
+                                </li>
+                                <p class="tech-stack">Tech Stack - Reactive Java, Spring Boot, GraphQL, Docker, Reactor Test, JUnit, Mockito</p>
                                 
                             </ul>
                         </div>
@@ -112,7 +135,8 @@
                         <div class="subheading mb-0">Master of Science in Computer Science</div>
                     </div>
                 </div>
-                <p>Key Courses: </p>
+                <p> <span class="key-courses">Key Courses:</span> Design and Analysis of Algorithms, Cloud Computing, Big Data, Machine Learning, Deep Learning, Software Engineering, Operating Systems, Foundations of Data Science</p>
+
             </div>
             <div class="flex-shrink-0"><span class="text-primary">Aug 2023 - Exp May 2025</span></div>
         </div>
@@ -126,7 +150,9 @@
                         <div class="subheading mb-0">B.Tech in Computer Science & Engineering</div>
                     </div>
                 </div>
-                <p>Key Courses: </p>
+                <p ><span class="key-courses">Key Courses:  </span>Advanced Algorithms, Optimization of Algorithms, Design and Analysis of Algorithms, Parallel Computing, Operating Systems, Machine Learning, Computer Vision, Computer Graphics, 
+                    Computer Architecture, Computer Programming</p>
+                
             </div>
             <div class="flex-shrink-0"><span class="text-primary">July 2018 - May 2022</span></div>
         </div>
@@ -194,9 +220,9 @@
             <section class="resume-section" id="projects">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Projects</h2>
-                    <div class="row">
+                    <div class= "row">
                         <div class="col-md-4">
-                            <a class="card project-card" href = "https://github.com/gcivil-nyu-org/INET-Wednesday-Spring2024-Team-2"  style="text-decoration: none;" target="_blank">
+                            <a class="card project-card" href = "https://github.com/gcivil-nyu-org/INET-Wednesday-Spring2024-Team-2"  style="text-decoration: none;" target="_blank" >
                                 <div class="card-body" >
                                     <div class="d-flex justify-content-between align-items-center">
                                         <h5 class="card-title">RentWiseNYC </h5>
@@ -209,10 +235,23 @@
                         </div>
                        
                         <div class="col-md-4">
+                            <a class="card project-card" href = "https://github.com/TekuriSaiAkhil/BIG-DATA"  style="text-decoration: none;" target="_blank">
+                                <div class="card-body" >
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title">Predictive Modeling for Solar Energy Production - Big Data </h5>
+                                        <i class="fab fa-github" style="color: #181717;"></i>
+                                    </div>
+                                    <p class="card-text">Real-time predictive model for solar energy output using PySpark, Kafka, and Spark MLlib. Leveraging weather and solar irradiance data from Open Power System Data and real-time feeds via OpenWeatherMap, with an end-to-end pipeline integrating data streaming through Kafka and storage in AWS</p>
+                                    
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-4">
                             <a class="card project-card" href = "https://github.com/vamshinaik309/wealth-wave"  style="text-decoration: none;" target="_blank">
                                 <div class="card-body" >
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h5 class="card-title">RentWiseNYC </h5>
+                                        <h5 class="card-title">WealthWave - Freedom to your financials</h5>
                                         <i class="fab fa-github" style="color: #181717;"></i>
                                     </div>
                                     <p class="card-text"> WealthWave leverages cloud computing and NLP to transform personal finance management. By integrating AWS with GPT-4 API, it automates bill digitization and enhances financial analysis, addressing manual entry and limited insights. This project demonstrates the powerful synergy of cloud and AI for intuitive, data-driven solutions.</p>
@@ -220,40 +259,42 @@
                                 </div>
                             </a>
                         </div>
-                        <!-- 
                         <div class="col-md-4">
-                            <div class="card project-card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Project Three</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, harum unde, ipsa amet accusantium cum, eius ab aperiam consequuntur sunt vero. Atque a fuga debitis! Distinctio recusandae sunt excepturi ex!</p>
+                            <a class="card project-card" href = "https://github.com/aru456/Anomaly-Detection-in-Videos-BTP-Thesis"  style="text-decoration: none;" target="_blank" >
+                                <div class="card-body" >
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title">Design and Analysis of GAN Architecture for Anomaly Detection</h5>
+                                        <i class="fab fa-github" style="color: #181717;"></i>
+                                    </div>
+                                    <p class="card-text"> Anomaly detection system using GAN-based One-Class Classifier for video surveillance. Employs a generator-discriminator architecture to identify abnormal activities in dynamic frames, using reconstruction-based prediction and adversarial learning.</p>
+                                    
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-md-4">
-                            <div class="card project-card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Project One</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, harum unde, ipsa amet accusantium cum, eius ab aperiam consequuntur sunt vero. Atque a fuga debitis! Distinctio recusandae sunt excepturi ex!</p>
+                            <a class="card project-card" href = "https://github.com/aru456/PhotoFind-AI"  style="text-decoration: none;" target="_blank">
+                                <div class="card-body" >
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title">PhotoFind-Index  -  AI</h5>
+                                        <i class="fab fa-github" style="color: #181717;"></i>
+                                    </div>
+                                    <p class="card-text">AI-powered image search platform that labels and indexes images for efficient retrieval. Supports searches using custom or AI-generated labels, providing seamless access to photos through a cloud-based system integrated with AWS services.</p>
+                                    
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-md-4">
-                            <div class="card project-card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Project Two</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, harum unde, ipsa amet accusantium cum, eius ab aperiam consequuntur sunt vero. Atque a fuga debitis! Distinctio recusandae sunt excepturi ex!</p>
+                            <a class="card project-card" href = "https://github.com/aru456/Steel-Defects-using-Deep-Learning"  style="text-decoration: none;" target="_blank">
+                                <div class="card-body" >
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title">Detection of Steel Defects using Deep Learning</h5>
+                                        <i class="fab fa-github" style="color: #181717;"></i>
+                                    </div>
+                                    <p class="card-text"> Deep learning model for steel defect detection using CNN with UNet architecture and ResNet34 backbone. Features a three-step pipeline for efficient defect segmentation.</p>
+                                    
                                 </div>
-                            </div>
+                            </a>
                         </div>
-                        <div class="col-md-4">
-                            <div class="card project-card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Project Three</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, harum unde, ipsa amet accusantium cum, eius ab aperiam consequuntur sunt vero. Atque a fuga debitis! Distinctio recusandae sunt excepturi ex!</p>
-                                </div>
-                            </div>
-                        </div> -->
-                        
                     </div>
                 </div>
             </section>
@@ -274,7 +315,7 @@
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Merit Scholarship recipient - NYU 
+                            Merit Scholarship recipient - New York University (NYU) 
                         </li>
                     </ul>
                 </div>

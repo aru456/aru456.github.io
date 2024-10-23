@@ -10996,9 +10996,10 @@ h3 {
   border-radius: 0.5rem;
   color: var(--bs-dark); /* Dark text color */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   max-height: 200px;
-  overflow:scroll;
+  overflow: scroll;
+
 }
 
 .project-card:hover {
@@ -11050,4 +11051,20 @@ h3 {
 .skill-item:hover::before {
   opacity: 1;
   transform: translate(-50%, 0); /* Fade in and slide up */
+}
+.tech-stack {
+  font-weight:bold;
+  font-size: 0.9rem;
+  padding: 5px;
+  text-align:justify; /* centered text */
+  margin-bottom: 0;
+
+}
+.large-font{
+  font-size: 1.1rem;
+}
+
+
+.key-courses {
+  font-weight: bold;
 }
