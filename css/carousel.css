@@ -221,3 +221,50 @@
         font-size: 2rem;
     }
 }
+
+.floating-social-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.social-icon {
+    width: 3.3rem;
+    height: 3.3rem;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-size: 2.25rem;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .floating-social-icons {
+        bottom: 10px;
+        right: 10px;
+    }
+    
+    .social-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .social-icon i {
+        font-size: 20px;
+    }
+}
