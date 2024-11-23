@@ -14,6 +14,7 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/carousel.css" rel="stylesheet" />
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-4B7NW28DPN"></script>
         <script>
@@ -23,6 +24,7 @@
 
         gtag('config', 'G-4B7NW28DPN');
         </script>
+        <link href="css/carousel.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -42,14 +44,14 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
                 </ul>
             </div>
-            <ul class="dev-icons skills-animate">
+            <!-- <ul class="dev-icons skills-animate">
                         <a href="https://www.linkedin.com/in/sai-aravind456/" class="list-inline-item skill-item linkedin-icon" target="_blank">
                             <i class="fab fa-linkedin" style="color: #181717;"></i>
                         </a>
                         <a href="https://github.com/aru456" target="_blank" class="list-inline-item skill-item github-icon">
                             <i class="fab fa-github" style="color: #181717;"></i>
                         </a>
-            </ul>
+            </ul> -->
         </nav>
         <!-- Page Content-->
         <div class="container-fluid p-0">
@@ -81,7 +83,7 @@
             <hr class="m-0" />
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
-                    <h2 class="mb-4">Experience</h2>
+                    <h2 class="mb-2">Experience</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Publicis Sapient</h3>
@@ -165,36 +167,163 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Skills</h2>
                     <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <!-- Font Awesome Icons for Skills -->
-                    <ul class="list-inline dev-icons skills-animate">
-                        <!-- HTML5 -->
-                        <li class="list-inline-item skill-item"><i class="fab fa-html5" style="color: #E34F26;"></i></li>
-                        <!-- CSS3 -->
-                        <li class="list-inline-item skill-item" ><i class="fab fa-css3-alt" style="color: #1572B6;"></i></li>
-                        <!-- JavaScript -->
-                        <li class="list-inline-item skill-item" ><i class="fab fa-js-square" style="color: #F7DF1E;"></i></li>
-                        <!-- React -->
-                        <li class="list-inline-item skill-item" ><i class="fab fa-react" style="color: #61DAFB;"></i></li>
-                        <!-- npm -->
-                        <li class="list-inline-item skill-item" ><i class="fab fa-npm" style="color: #CB3837;"></i></li>
-                        <!-- Python -->
-                        <li class="list-inline-item skill-item" ><i class="fab fa-python" style="color: #306998;"></i></li>
-                        <!-- Docker -->
-                        <li class="list-inline-item skill-item" ><i class="fab fa-docker" style="color: #2496ED;"></i></li>
-                        <!-- Java -->
-                        <li class="list-inline-item skill-item" ><i class="fab fa-java" style="color: #007396;"></i></li>
-                        <!-- AWS -->
-                        <li class="list-inline-item skill-item" ><i class="fab fa-aws" style="color: #FF9900;"></i></li>
-                        <!-- GitHub -->
-                        <li class="list-inline-item skill-item" ><i class="fab fa-github" style="color: #181717;"></i></li>
-                        <!-- C -->
-                        <li class="list-inline-item skill-item" ><span style="font-weight: bold;">C</span></li>
-                        <!-- C++ -->
-                        <li class="list-inline-item skill-item"><span style="font-weight: bold;">C++</span></li>
-                    </ul>
+                    <div class="skills-carousel-container">
+                        <div class="skills-carousel">
+                            <ul class="list-inline dev-icons skills-animate">
+                                <li class="list-inline-item skill-item">
+                                    <div class="skill-wrapper">
+                                        
+                                        <i class="fab fa-html5" style="color: #E34F26; font-size: 2rem;"></i>
+                                        <span class="skill-name">HTML5</span>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item skill-item">
+                                    <div class="skill-wrapper">
+                                        <i class="fab fa-css3-alt" style="color: #1572B6; font-size: 2rem;"></i>
+                                        <span class="skill-name">CSS3</span>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item skill-item">
+                                    <div class="skill-wrapper">
+                                        <i class="fab fa-js-square" style="color: #F7DF1E; font-size: 2rem;"></i>
+                                        <span class="skill-name">JavaScript</span>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item skill-item">
+                                    <div class="skill-wrapper">
+                                        <i class="fab fa-react" style="color: #61DAFB;  font-size: 2rem;"></i>
+                                        <span class="skill-name">React</span>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item skill-item">
+                                    <div class="skill-wrapper">
+                                        <i class="fab fa-npm" style="color: #CB3837; font-size: 2rem;"></i>
+                                        <span class="skill-name">NPM</span>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item skill-item">
+                                    <div class="skill-wrapper">
+                                        <i class="fab fa-python" style="color: #306998; font-size: 2rem;"></i>
+                                        <span class="skill-name">Python</span>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item skill-item">
+                                    <div class="skill-wrapper">
+                                        <i class="fab fa-docker" style="color: #2496ED; font-size: 2rem;"></i>
+                                        <span class="skill-name">Docker</span>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item skill-item">
+                                    <div class="skill-wrapper">
+                                        <i class="fab fa-java" style="color: #007396; font-size: 2rem;"></i>
+                                        <span class="skill-name">Java</span>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item skill-item">
+                                    <div class="skill-wrapper">
+                                        <i class="fab fa-aws" style="color: #FF9900; font-size: 2rem;"></i>
+                                        <span class="skill-name">AWS</span>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item skill-item">
+                                    <div class="skill-wrapper">
+                                        <i class="fab fa-github" style="color: #181717;font-size: 2rem;"></i>
+                                        <span class="skill-name">GitHub</span>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item skill-item">
+                                    <div class="skill-wrapper">
+                                        <span style="font-weight: bold;font-size: 2rem;">C</span>
+                                        <span class="skill-name">C</span>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item skill-item">
+                                    <div class="skill-wrapper">
+                                        <span style="font-weight: bold;font-size: 2rem;">C++</span>
+                                        <span class="skill-name">C++</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- Duplicate list for infinite scroll -->
+                            <ul class="list-inline dev-icons skills-animate">
+                                <!-- Same content as above -->
+                                <li class="list-inline-item skill-item">
+                                    <div class="skill-wrapper">
+                                        <i class="fab fa-html5" style="color: #E34F26;"></i>
+                                        <span class="skill-name">HTML5</span>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item skill-item">
+                                    <div class="skill-wrapper">
+                                        <i class="fab fa-css3-alt" style="color: #1572B6;"></i>
+                                        <span class="skill-name">CSS3</span>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item skill-item">
+                                    <div class="skill-wrapper">
+                                        <i class="fab fa-js-square" style="color: #F7DF1E;"></i>
+                                        <span class="skill-name">JavaScript</span>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item skill-item">
+                                    <div class="skill-wrapper">
+                                        <i class="fab fa-react" style="color: #61DAFB;"></i>
+                                        <span class="skill-name">React</span>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item skill-item">
+                                    <div class="skill-wrapper">
+                                        <i class="fab fa-npm" style="color: #CB3837;"></i>
+                                        <span class="skill-name">NPM</span>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item skill-item">
+                                    <div class="skill-wrapper">
+                                        <i class="fab fa-python" style="color: #306998;"></i>
+                                        <span class="skill-name">Python</span>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item skill-item">
+                                    <div class="skill-wrapper">
+                                        <i class="fab fa-docker" style="color: #2496ED;"></i>
+                                        <span class="skill-name">Docker</span>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item skill-item">
+                                    <div class="skill-wrapper">
+                                        <i class="fab fa-java" style="color: #007396;"></i>
+                                        <span class="skill-name">Java</span>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item skill-item">
+                                    <div class="skill-wrapper">
+                                        <i class="fab fa-aws" style="color: #FF9900;"></i>
+                                        <span class="skill-name">AWS</span>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item skill-item">
+                                    <div class="skill-wrapper">
+                                        <i class="fab fa-github" style="color: #181717;"></i>
+                                        <span class="skill-name">GitHub</span>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item skill-item">
+                                    <div class="skill-wrapper">
+                                        <span style="font-weight: bold; font-size: 2rem;">C</span>
+                                        <span class="skill-name">C</span>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item skill-item">
+                                    <div class="skill-wrapper">
+                                        <span style="font-weight: bold; font-size: 2rem;">C++</span>
+                                        <span class="skill-name">C++</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
-
-                    <div class="subheading mb-3">Workflow</div>
+                    <div class="subheading mb-3 mt-5">Workflow</div>
                     <ul class="fa-ul mb-0">
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
@@ -219,79 +348,71 @@
             <!-- Interests-->
             <section class="resume-section" id="projects">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Projects</h2>
-                    <div class= "row">
-                        <div class="col-md-4">
-                            <a class="card project-card" href = "https://github.com/gcivil-nyu-org/INET-Wednesday-Spring2024-Team-2"  style="text-decoration: none;" target="_blank" >
-                                <div class="card-body" >
+                    <h2 class="mb-2">Projects</h2>
+                    <div class="row g-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <a class="card project-card h-100" href="https://github.com/gcivil-nyu-org/INET-Wednesday-Spring2024-Team-2" style="text-decoration: none;" target="_blank">
+                                <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h5 class="card-title">RentWiseNYC </h5>
+                                        <h5 class="card-title">RentWiseNYC</h5>
                                         <i class="fab fa-github" style="color: #181717;"></i>
                                     </div>
                                     <p class="card-text">Our app simplifies finding NYC rental apartments by providing detailed data like bedbug history, nearby transportation, 311 complaints, and landlord issues. Users can filter searches, save favorites, and connect directly with landlords, helping students make fully informed decisions.</p>
-                                    
                                 </div>
                             </a>
                         </div>
-                       
-                        <div class="col-md-4">
-                            <a class="card project-card" href = "https://github.com/TekuriSaiAkhil/BIG-DATA"  style="text-decoration: none;" target="_blank">
-                                <div class="card-body" >
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <a class="card project-card h-100" href="https://github.com/TekuriSaiAkhil/BIG-DATA" style="text-decoration: none;" target="_blank">
+                                <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h5 class="card-title">Predictive Modeling for Solar Energy Production - Big Data </h5>
+                                        <h5 class="card-title">Predictive Modeling for Solar Energy Production - Big Data</h5>
                                         <i class="fab fa-github" style="color: #181717;"></i>
                                     </div>
                                     <p class="card-text">Real-time predictive model for solar energy output using PySpark, Kafka, and Spark MLlib. Leveraging weather and solar irradiance data from Open Power System Data and real-time feeds via OpenWeatherMap, with an end-to-end pipeline integrating data streaming through Kafka and storage in AWS</p>
-                                    
                                 </div>
                             </a>
                         </div>
-                        
-                        <div class="col-md-4">
-                            <a class="card project-card" href = "https://github.com/vamshinaik309/wealth-wave"  style="text-decoration: none;" target="_blank">
-                                <div class="card-body" >
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <a class="card project-card h-100" href="https://github.com/vamshinaik309/wealth-wave" style="text-decoration: none;" target="_blank">
+                                <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <h5 class="card-title">WealthWave - Freedom to your financials</h5>
                                         <i class="fab fa-github" style="color: #181717;"></i>
                                     </div>
-                                    <p class="card-text"> WealthWave leverages cloud computing and NLP to transform personal finance management. By integrating AWS with GPT-4 API, it automates bill digitization and enhances financial analysis, addressing manual entry and limited insights. This project demonstrates the powerful synergy of cloud and AI for intuitive, data-driven solutions.</p>
-                                    
+                                    <p class="card-text">WealthWave leverages cloud computing and NLP to transform personal finance management. By integrating AWS with GPT-4 API, it automates bill digitization and enhances financial analysis, addressing manual entry and limited insights. This project demonstrates the powerful synergy of cloud and AI for intuitive, data-driven solutions.</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-4">
-                            <a class="card project-card" href = "https://github.com/aru456/Anomaly-Detection-in-Videos-BTP-Thesis"  style="text-decoration: none;" target="_blank" >
-                                <div class="card-body" >
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <a class="card project-card h-100" href="https://github.com/aru456/Anomaly-Detection-in-Videos-BTP-Thesis" style="text-decoration: none;" target="_blank">
+                                <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <h5 class="card-title">Design and Analysis of GAN Architecture for Anomaly Detection</h5>
                                         <i class="fab fa-github" style="color: #181717;"></i>
                                     </div>
-                                    <p class="card-text"> Anomaly detection system using GAN-based One-Class Classifier for video surveillance. Employs a generator-discriminator architecture to identify abnormal activities in dynamic frames, using reconstruction-based prediction and adversarial learning.</p>
-                                    
+                                    <p class="card-text">Anomaly detection system using GAN-based One-Class Classifier for video surveillance. Employs a generator-discriminator architecture to identify abnormal activities in dynamic frames, using reconstruction-based prediction and adversarial learning.</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-4">
-                            <a class="card project-card" href = "https://github.com/aru456/PhotoFind-AI"  style="text-decoration: none;" target="_blank">
-                                <div class="card-body" >
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <a class="card project-card h-100" href="https://github.com/aru456/PhotoFind-AI" style="text-decoration: none;" target="_blank">
+                                <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <h5 class="card-title">PhotoFind-Index  -  AI</h5>
                                         <i class="fab fa-github" style="color: #181717;"></i>
                                     </div>
                                     <p class="card-text">AI-powered image search platform that labels and indexes images for efficient retrieval. Supports searches using custom or AI-generated labels, providing seamless access to photos through a cloud-based system integrated with AWS services.</p>
-                                    
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-4">
-                            <a class="card project-card" href = "https://github.com/aru456/Steel-Defects-using-Deep-Learning"  style="text-decoration: none;" target="_blank">
-                                <div class="card-body" >
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <a class="card project-card h-100" href="https://github.com/aru456/Steel-Defects-using-Deep-Learning" style="text-decoration: none;" target="_blank">
+                                <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <h5 class="card-title">Detection of Steel Defects using Deep Learning</h5>
                                         <i class="fab fa-github" style="color: #181717;"></i>
                                     </div>
-                                    <p class="card-text"> Deep learning model for steel defect detection using CNN with UNet architecture and ResNet34 backbone. Features a three-step pipeline for efficient defect segmentation.</p>
-                                    
+                                    <p class="card-text">Deep learning model for steel defect detection using CNN with UNet architecture and ResNet34 backbone. Features a three-step pipeline for efficient defect segmentation.</p>
                                 </div>
                             </a>
                         </div>

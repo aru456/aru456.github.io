@@ -11022,36 +11022,7 @@ h3 {
   }
 }
 
-/* Skills section container */
-.skills-animate {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  padding: 20px;
-}
 
-/* Styling for each skill item */
-.skill-item {
-  position: relative;
-  display: inline-block;
-  transition: transform 0.4s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}
-
-.skill-item i, .skill-item span {
-  font-size: 3rem; /* Increased icon size */
-  transition: transform 0.4s ease;
-}
-
-/* Hover effect for the skill items */
-.skill-item:hover {
-  transform: scale(1.4); /* Enlarge on hover */
-}
-
-.skill-item:hover::before {
-  opacity: 1;
-  transform: translate(-50%, 0); /* Fade in and slide up */
-}
 .tech-stack {
   font-weight:bold;
   font-size: 0.9rem;
@@ -11067,4 +11038,254 @@ h3 {
 
 .key-courses {
   font-weight: bold;
+}
+
+/* Base styles */
+body {
+  padding-top: 3.375rem; /* Adjusted for mobile */
+  color: #6c757d;
+}
+
+@media (min-width: 992px) {
+  body {
+      padding-top: 0;
+      padding-left: 17rem;
+  }
+}
+
+/* Navigation styles */
+#sideNav {
+  padding: 1rem;
+}
+
+@media (max-width: 991.98px) {
+  #sideNav {
+      padding: 0.5rem 1rem;
+      background: var(--bs-primary);
+  }
+  
+  #sideNav .navbar-brand {
+      padding: 0.5rem 0;
+  }
+  
+  #sideNav .navbar-toggler {
+      margin-right: 0.5rem;
+  }
+}
+
+/* Section styles */
+section.resume-section {
+  padding: 3rem 1rem; /* Reduced padding for mobile */
+  min-height: auto; /* Remove fixed height on mobile */
+}
+
+@media (min-width: 768px) {
+  section.resume-section {
+      padding: 4rem 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  section.resume-section {
+      padding: 5rem 3rem;
+      min-height: 100vh;
+  }
+}
+
+/* Project cards */
+.project-card {
+  height: auto;
+  max-height: none; /* Remove fixed height */
+  overflow-y: auto;
+  margin-bottom: 1rem;
+  transition: transform 0.2s ease;
+}
+
+@media (max-width: 767.98px) {
+  .project-card:hover {
+      transform: none; /* Disable hover effect on mobile */
+  }
+}
+
+/* Education section */
+.nyu-logo, .iiti-logo {
+  height: 3rem; /* Smaller on mobile */
+}
+
+@media (min-width: 768px) {
+  .nyu-logo, .iiti-logo {
+      height: 4rem;
+  }
+}
+.subheading {
+  font-size: 1.25rem; /* Smaller on mobile */
+}
+
+@media (min-width: 768px) {
+  .subheading {
+      font-size: 1.5rem;
+  }
+}
+
+/* Experience section */
+.flex-shrink-0 {
+  margin-top: 1rem; /* Add space on mobile */
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .flex-shrink-0 {
+      margin-top: 0;
+      text-align: right;
+  }
+}
+
+/* Add/modify these styles */
+
+/* General text alignment */
+p, .card-text, ul li {
+  text-align: justify;
+  hyphens: auto;
+}
+
+/* Experience section improvements */
+.resume-section ul li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+/* Project card improvements */
+.project-card {
+  height: auto;
+  max-height: none;
+  overflow-y: auto;
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.project-card .card-text {
+  text-align: justify;
+  hyphens: auto;
+  line-height: 1.6;
+}
+
+/* Section content improvements */
+.resume-section-content {
+  max-width: 100%;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .resume-section-content {
+    padding: 0 2rem;
+  }
+}
+
+/* Lead paragraph improvements */
+p.lead {
+  text-align: justify;
+  hyphens: auto;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+/* Education section text improvements */
+.education-text {
+  text-align: justify;
+  hyphens: auto;
+  line-height: 1.6;
+}
+
+/* Skills section description improvements */
+.tech-stack {
+  text-align: justify;
+  hyphens: auto;
+  line-height: 1.6;
+  margin: 0.5rem 0;
+  color: #666;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .resume-section {
+    padding: 3rem 1rem;
+  }
+  
+  .resume-section-content {
+    padding: 0 0.5rem;
+  }
+  
+  p, .card-text, ul li {
+    font-size: 0.95rem;
+  }
+}
+/* Navigation bar fixes */
+#sideNav {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: var(--bs-primary);
+}
+
+#sideNav .navbar-nav {
+  text-align: center; /* Center the nav items */
+  width: 100%; /* Take full width */
+}
+
+#sideNav .navbar-nav .nav-item {
+  display: block;
+  width: 100%; /* Take full width */
+}
+
+#sideNav .navbar-nav .nav-item .nav-link {
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center; /* Center the text */
+  padding: 0.75rem 0;
+}
+
+/* Desktop navigation styles */
+@media (min-width: 992px) {
+  #sideNav .navbar-collapse {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+
+  #sideNav .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+    align-items: center; /* Center items */
+  }
+
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* Mobile navigation fixes */
+@media (max-width: 991.98px) {
+  #sideNav .navbar-collapse {
+    text-align: center;
+    background-color: var(--bs-primary);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  #sideNav .navbar-nav .nav-item {
+    text-align: center;
+  }
+
+  #sideNav .navbar-nav .nav-item .nav-link {
+    padding: 0.75rem 0;
+    display: inline-block;
+    width: 100%;
+  }
 }
