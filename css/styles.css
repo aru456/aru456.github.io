@@ -11289,3 +11289,46 @@ p.lead {
     width: 100%;
   }
 }
+.typed-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #343a40;
+}
+
+#typed {
+  color: #bd5d38;
+}
+.resume-download-section {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* End of Resume Download Section */
+
+.social-buttons .btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.social-buttons .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.typed-text {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.typed-text #typed {
+  font-weight: 600;
+  color: var(--bs-primary);
+}
+
+.lead {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}

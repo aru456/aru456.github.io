@@ -31,4 +31,19 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    // Add Typed.js initialization
+    const typed = new Typed('#typed', {
+        strings: [
+            'Full Stack Developer',
+            'Software Development Engineer',
+            'Cloud Solutions Engineer',
+            'Machine Learning Engineer'
+        ],
+        typeSpeed: 50,
+        backSpeed: 30,
+        loop: true,
+        backDelay: 2000,
+        startDelay: 1000
+    });
+
 });
