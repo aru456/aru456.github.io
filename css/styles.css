@@ -11003,7 +11003,7 @@ h3 {
 }
 
 .project-card:hover {
-  transform: scale(1.05); /* Slightly enlarge on hover */
+  transform: scale(1.03); /* Slightly enlarge on hover */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Add a subtle shadow on hover */
 }
 
@@ -11159,14 +11159,14 @@ p, .card-text, ul li {
   height: auto;
   max-height: none;
   overflow-y: auto;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0rem;
   transition: transform 0.2s ease;
 }
 
 .project-card .card-text {
   text-align: justify;
   hyphens: auto;
-  line-height: 1.6;
+  line-height: 1.2;
 }
 
 /* Section content improvements */
@@ -11331,4 +11331,7 @@ p.lead {
 .lead {
   font-size: 1.1rem;
   line-height: 1.8;
+}
+.card-text-stack{
+  font-size: 0.8rem;
 }
