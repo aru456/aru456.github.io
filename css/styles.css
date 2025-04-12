@@ -11219,6 +11219,11 @@ p.lead {
     font-size: 0.95rem;
   }
 }
+@media (max-width: 400px) {
+  .typed-text #typed {
+    font-size: 1.3rem;
+  }
+}
 /* Navigation bar fixes */
 #sideNav {
   padding-left: 1rem;

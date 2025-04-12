@@ -27,7 +27,7 @@ I am a passionate **Software Developer** and a **Computer Science graduate stude
 
 ---
 
-### 🌐 Find Me Online:
+### 🌐 Connect with me on LinkedIn:
 
 - Portfolio: [saiaravind.me](https://www.saiaravind.me/)  
 - LinkedIn: [linkedin.com/in/sai-aravind456](https://linkedin.com/in/sai-aravind456)  
