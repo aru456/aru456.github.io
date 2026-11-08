@@ -138,11 +138,12 @@ section.resume-section { display: block; min-height: auto; max-width: 76rem; pad
 .nav-idx { color: #5c646d; margin-right: 0.6rem; font-size: 0.75rem; }
 
 @media (min-width: 992px) {
+  #sideNav { padding-left: 0; padding-right: 0; }
   #sideNav .navbar-collapse { margin-top: 1.5rem; }
   #sideNav .navbar-collapse .navbar-nav { align-items: stretch; }
   #sideNav .navbar-nav .nav-item .nav-link {
     text-align: left !important;
-    padding: 0.6rem 0 0.6rem 3.25rem !important;
+    padding: 0.6rem 0 0.6rem 4.25rem !important;
     border-left: 2px solid transparent;
   }
   #sideNav .navbar-nav .nav-item .nav-link.active { border-left-color: var(--accent); background: rgba(255, 255, 255, 0.03); }
