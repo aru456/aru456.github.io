@@ -1,6 +1,6 @@
 # Sai Aravind Yanamadala
 
-> Backend software engineer at Intuit in New York, working on Payroll. Builds and owns backend services in Java and Node.js on AWS, with event-driven systems on Kafka, and champions AI-assisted development on the team. MS in Computer Science from New York University (4.0 GPA); B.Tech in Computer Science from IIT Indore.
+> Backend software engineer at Intuit in New York with 3+ years of experience building production systems, working on fintech backend services for Intuit Payroll. Builds and owns scalable backend services in Java and Node.js on AWS, with event-driven systems on Kafka, and champions AI-assisted development on the team. MS in Computer Science from New York University (4.0 GPA); B.Tech in Computer Science from IIT Indore.
 
 Also known as: Aravind Yanamadala, Sai Aravind.
 
