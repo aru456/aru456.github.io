@@ -1,0 +1,42 @@
+# Sai Aravind Yanamadala
+
+> Backend software engineer at Intuit in New York, working on Payroll. Builds and owns backend services in Java and Node.js on AWS, with event-driven systems on Kafka, and champions AI-assisted development on the team. MS in Computer Science from New York University (4.0 GPA); B.Tech in Computer Science from IIT Indore.
+
+Also known as: Aravind Yanamadala, Sai Aravind.
+
+## Profile
+
+- [Portfolio](https://www.saiaravind.me/): experience, education, skills, projects, awards
+- [Resume (PDF)](https://www.saiaravind.me/assets/files/Sai_Aravind_Yanamadala_Resume.pdf)
+- [LinkedIn](https://www.linkedin.com/in/sai-aravind456/)
+- [GitHub](https://github.com/aru456)
+- [LeetCode](https://leetcode.com/u/aru456/)
+- Email: y.saiaravind@gmail.com
+
+## Experience
+
+- **Intuit**, Software Engineer 1, Backend (Feb 2026 to present, New York, hybrid): backend services for Intuit Payroll, end to end from API design to production; cross-team delivery across services with deep upstream and downstream dependencies; AI-assisted development with reusable AI skills and workflows; Kafka event-driven flows; Kubernetes deployments through Jenkins and ArgoCD.
+- **LOCOMeX, Inc**, Software Engineer Intern (Feb 2025 to Jan 2026): ESG scoring platform in Django with async PDF extraction and LLM processing (Claude 3 Haiku and LLaMA 3.2 1B via AWS Bedrock), cutting response time by 35%; PDF/CSV report exports and automated delivery via AWS SES.
+- **Publicis Sapient**, Software Development Engineer (Associate) 2 (May 2022 to Aug 2023): reactive Spring WebFlux and GraphQL services for Albertsons Health & Wellness; up to 30% lower API latency with Redis caching; test coverage raised from 70% to 90%.
+
+## Education
+
+- New York University: MS in Computer Science, GPA 4.0/4.0 (Aug 2023 to May 2025). Academic Achievement Award, Wasserman Grant, Merit Scholarship.
+- Indian Institute of Technology Indore: B.Tech in Computer Science and Engineering (Jul 2018 to May 2022).
+
+## Skills
+
+- Core: Java, Spring Boot, Node.js, JavaScript, REST APIs, AWS, Kafka, AI-assisted development
+- Also: TypeScript, Python, SQL, GraphQL, Microservices, PostgreSQL, Redis, DynamoDB, Kubernetes, Docker, Jenkins, ArgoCD, JUnit, Mockito, Splunk, Grafana, Prometheus, LLMs, AWS Bedrock
+
+## Certifications
+
+- AWS Certified Cloud Practitioner
+- Google Cloud Digital Leader
+- Databricks Generative AI Fundamentals
+
+## Selected projects
+
+- [RentWiseNYC](https://github.com/gcivil-nyu-org/INET-Wednesday-Spring2024-Team-2): Django backend combining NYC open data into a searchable listings service
+- [PhotoFind-Index AI](https://github.com/aru456/PhotoFind-AI): serverless, event-driven image search on AWS (Lambda, S3, Rekognition, OpenSearch, Lex)
+- [Prompt-Injection Detection](https://github.com/aru456/Detecting-Prompt-Injections-with-Fine-Tuned-Transformer-LLMs): fine-tuned XLM-RoBERTa to detect prompt-injection attacks on LLMs
