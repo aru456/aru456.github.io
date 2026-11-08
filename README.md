@@ -1,40 +1,30 @@
-# Sai Aravind Yanamadala
+# Sai Aravind Yanamadala · [saiaravind.me](https://www.saiaravind.me/)
 
+Personal portfolio. I'm a backend software engineer at **Intuit**, working on Payroll: Java and Node.js services on AWS, event-driven systems with Kafka, and AI-assisted development.
 
-## Welcome to My Portfolio! - [SaiAravind.me](https://www.saiaravind.me/)  🌟
+- **Experience:** Intuit (SWE 1, backend) · LOCOMeX (SWE intern, LLM-powered ESG scoring) · Publicis Sapient (SDE 2, Spring microservices)
+- **Education:** MS Computer Science, New York University (4.0 GPA) · B.Tech Computer Science, IIT Indore
 
-I am a passionate **Software Developer** and a **Computer Science graduate student** at New York University (NYU). I specialize in **Full-Stack Development**, **DevOps**, and **Machine Learning**, striving to create impactful solutions that blend innovation with functionality.
+## About this site
 
----
+Hand-built static site, no build step, deployed on GitHub Pages with a custom domain.
 
-### 💻 Technical Proficiencies:
+| Path | What it is |
+|---|---|
+| `index.html` | The whole page |
+| `css/styles.css` | Start Bootstrap "Resume" theme (Bootstrap 5), MIT |
+| `css/modern.css` | Design layer on top of the theme: tokens, light/dark themes, components |
+| `js/scripts.js` | Scrollspy, theme toggle, "show more", terminal and scroll animations |
+| `assets/` | Images and resume PDF |
 
-- **Languages**: Python, Java, C++, TypeScript, SQL, HTML/CSS  
-- **Frameworks**: React.js, Spring Boot, Flask, Django, TensorFlow, Keras, PyTorch  
-- **Cloud/DevOps**: AWS (Lambda, EC2, Elastic BeanStalk, EKS, S3, API Gateway, Cognito, DynamoDB, RDS, SageMaker), Docker, Kubernetes, Jenkins CI/CD, Travis CI/CD.
-- **Specialties**: Full-stack development, Microservices, Data Structures, Test-Driven Development(TDD)
+Run it locally:
 
+```sh
+python3 -m http.server 8000   # then open http://localhost:8000
+```
 
----
+> **Keep this repo public.** GitHub Pages only serves private repos on paid plans; making it private takes the site offline.
 
-### 🌟 Career Highlights:
+## Contact
 
-
-- **Publicis Sapient**: Worked as a Associate **Software Development Engineer** - 2 on scalable microservices and responsive web applications for **1M+ users** and improved API response times by **30%** through caching and asynchronous reactive programming.  
-- **Certifications**: AWS Certified Cloud Practitioner, Google Cloud Certified Digital Leader.  
-- **Academics**: Currently pursuing MSCS at **New York University (NYU)** and **IIT Indore**.
-
-
----
-
-### 🌐 Connect with me on LinkedIn:
-
-- Portfolio: [saiaravind.me](https://www.saiaravind.me/)  
-- LinkedIn: [linkedin.com/in/sai-aravind456](https://linkedin.com/in/sai-aravind456)  
-- GitHub: [github.com](https://github.com/aru456)
-
----
-
-Feel free to explore my repositories, learn about my journey, and connect with me. Let’s build something amazing together! 🚀
-
---- 
+[LinkedIn](https://www.linkedin.com/in/sai-aravind456/) · [GitHub](https://github.com/aru456) · y.saiaravind@gmail.com

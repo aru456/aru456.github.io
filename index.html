@@ -2,18 +2,35 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Software Engineer at INTUIT | NYU MS CS graduate | Full-stack and AI engineer building scalable cloud-native products." />
-        <meta name="author" content="" />
-        <title>Aravind's Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Sai Aravind Yanamadala — Backend Software Engineer at Intuit (Payroll). NYU MS CS (4.0). Java, Node.js, AWS, Kafka, distributed systems and AI-assisted development." />
+        <meta name="author" content="Sai Aravind Yanamadala" />
+        <meta property="og:title" content="Sai Aravind Yanamadala — Software Engineer @ Intuit" />
+        <meta property="og:description" content="Backend engineer at Intuit Payroll building scalable, event-driven services in Java and Node.js." />
+        <meta property="og:image" content="https://www.saiaravind.me/assets/img/ProfileNew.png" />
+        <meta property="og:url" content="https://www.saiaravind.me/" />
+        <meta name="theme-color" content="#14161a" />
+        <title>Sai Aravind Yanamadala · Software Engineer</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicons.ico" />
+        <!-- Apply saved / system theme before paint to avoid a flash -->
+        <script>
+            (function () {
+                var t = null;
+                try { t = localStorage.getItem('theme'); } catch (e) {}
+                if (!t) t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                document.documentElement.setAttribute('data-theme', t);
+                document.documentElement.classList.add('js');
+            })();
+        </script>
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@500;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/modern.css" rel="stylesheet" />
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-4B7NW28DPN"></script>
         <script>
@@ -23,665 +40,387 @@
 
         gtag('config', 'G-4B7NW28DPN');
         </script>
-        <link href="css/carousel.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Sai Aravind Yanamadala</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/ProfileNew.png" alt="..." /></span>
+                <span class="d-block d-lg-none brand-mobile"><span class="brand-prompt">~/</span>saiaravind</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/ProfileNew.png" alt="Sai Aravind Yanamadala" /></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about"><span class="nav-idx">01</span>About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience"><span class="nav-idx">02</span>Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education"><span class="nav-idx">03</span>Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills"><span class="nav-idx">04</span>Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects"><span class="nav-idx">05</span>Projects</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards"><span class="nav-idx">06</span>Awards</a></li>
                 </ul>
             </div>
+            <div class="nav-social d-none d-lg-flex">
+                <a href="https://github.com/aru456" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sai-aravind456/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://leetcode.com/u/aru456/" target="_blank" rel="noopener" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a>
+                <a href="mailto:y.saiaravind@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
         </nav>
-       
+
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-sun"></i>
+        </button>
+
         <!-- Page Content-->
-        <div class="container-fluid p-0">
+        <main class="container-fluid p-0">
             <!-- About-->
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
-                    <h3 class="home-eyebrow mb-3">Welcome to my Portfolio</h3>
-                    <h2 class="mb-0">
-                        Sai Aravind,
-                        <span class="text-primary">Yanamadala</span>
-                    </h2>
-                    
-                    <!-- Location and Contact -->
-                    <div class="subheading about-contact mb-5">
-                        <div class="mb-1"><i class="fas fa-code me-2"></i>Software Engineer @ INTUIT</div>
-                        <div><i class="fas fa-envelope fa-flip me-2"></i><a href="mailto:y.saiaravind@gmail.com">y.saiaravind@gmail.com</a></div>
+                    <div class="hero">
+                        <div class="hero-text">
+                            <p class="eyebrow"><span class="prompt">$</span> whoami</p>
+                            <h1 class="hero-name">Sai Aravind <span class="text-accent">Yanamadala</span></h1>
+                            <p class="hero-role">Backend Software Engineer <span class="nowrap"><span class="at">@</span> <strong>Intuit</strong></span></p>
+                            <div class="status-pill"><span class="dot"></span>Building backend services for Intuit Payroll · New York</div>
+                            <div class="hero-actions">
+                                <a href="assets/files/Sai_Aravind_Yanamadala_Resume.pdf" class="btn-x btn-x-primary" download="Sai_Aravind_Resume.pdf"><i class="fa-solid fa-file-arrow-down"></i> Resume</a>
+                                <a href="https://github.com/aru456" class="btn-x" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="https://www.linkedin.com/in/sai-aravind456/" class="btn-x" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                                <a href="https://leetcode.com/u/aru456/" class="btn-x" target="_blank" rel="noopener"><i class="fa-solid fa-code"></i> LeetCode</a>
+                                <button type="button" class="btn-x btn-copy" data-copy="y.saiaravind@gmail.com"><i class="fa-solid fa-envelope"></i> <span class="copy-label">y.saiaravind@gmail.com</span></button>
+                            </div>
+                        </div>
+
+                        <div class="terminal" aria-label="Terminal summary">
+                            <div class="terminal-bar">
+                                <span class="tdot r"></span><span class="tdot y"></span><span class="tdot g"></span>
+                                <span class="terminal-title">aravind@nyc: ~</span>
+                            </div>
+<pre class="terminal-body"><code><span class="tl"><span class="tp">$</span> cat profile.yaml</span>
+<span class="tl"><span class="tk">role</span>:     software engineer 1</span>
+<span class="tl"><span class="tk">team</span>:     intuit payroll · backend</span>
+<span class="tl"><span class="tk">backend</span>:  [java, node.js, spring boot, graphql]</span>
+<span class="tl"><span class="tk">infra</span>:    [aws, kubernetes, docker, ci/cd]</span>
+<span class="tl"><span class="tk">events</span>:   [kafka]</span>
+<span class="tl"><span class="tk">ai</span>:       [ai-assisted dev, llms, agents]</span>
+<span class="tl"><span class="tk">edu</span>:      nyu ms cs (4.0) · iit indore</span>
+<span class="tl"><span class="tp">$</span> <span class="cursor"></span></span></code></pre>
+                        </div>
                     </div>
 
-                    <!-- Main Description -->
-                    <p class="lead mb-5">
-                        I am a Software Engineer currently working at <span class="fw-semibold">INTUIT</span>, with a strong foundation from <span class="fw-semibold">New York University (MS in Computer Science)</span> and <span class="fw-semibold">IIT Indore (B.Tech in Computer Science)</span>. I have built and shipped full-stack and AI-powered products across fintech, ESG analytics, video platforms, and cloud-native systems. My focus is on designing scalable backend services, building reliable user-facing experiences, and delivering measurable business impact.
-                    </p>
-                    <p class="lead mb-5">I specialize in building production-grade systems across backend engineering, cloud infrastructure, and applied AI. My recent work includes asynchronous document pipelines, LLM-powered evaluation workflows, and data-driven platforms that prioritize reliability, performance, and scalability. I value clean architecture, strong testing practices, and measurable outcomes that translate technical execution into business impact.</p>
+                    <div class="about-copy">
+                        <p>I'm a backend engineer at <strong>Intuit</strong>, working on Payroll. I own services end to end, from API design to production, in Java and Node.js on AWS. Payroll work runs across many teams, so much of my job is aligning on contracts and shipping cleanly across dependencies. I'm also big on AI-assisted development: I build AI workflows and reusable skills that help my team move faster.</p>
+                        <p>Before Intuit, I shipped LLM-powered ESG analytics on AWS Bedrock at <strong>LOCOMeX</strong> and reactive Spring microservices at <strong>Publicis Sapient</strong>. I hold an MS in CS from <strong>NYU</strong> (4.0 GPA) and a B.Tech in CS from <strong>IIT Indore</strong>. I care about reliable systems, clean APIs, and measurable performance.</p>
+                    </div>
 
-                    <!-- Resume Download -->
-                    <p class="resume-download-section mb-4">
-                        <span class="me-2">Access my full resume for a detailed overview of my experience:</span>
-                        <a href="assets/files/Sai_Aravind_Yanamadala_Resume.pdf" 
-                           class="btn btn-outline-primary" 
-                           download="Sai_Aravind_Resume.pdf">
-                           <i class="fa-solid fa-file-arrow-down me-2"></i> Resume
-                        </a>
-                        <a href="https://leetcode.com/u/aru456/" 
-                            class="btn btn-outline-dark" 
-                            target="_blank">
-                            <img width="16" height="16" src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-shadow-tal-revivo.png" alt="external-level-up-your-coding-skills-and-quickly-land-a-job-logo-shadow-tal-revivo"/> LeetCode
-                        </a>
-                    </p>
-
-                    <!-- Social Icons -->
-                    <div class="floating-social-icons">
-                        <a href="https://www.linkedin.com/in/sai-aravind456/" 
-                           class="social-icon linkedin" 
-                           target="_blank">
-                            <i class="fab fa-linkedin fa-bounce" style="color: #0077B5;"></i>
-                        </a>
-                        <a href="https://github.com/aru456" 
-                           target="_blank" 
-                           class="social-icon github">
-                            <i class="fab fa-github" style="color: #181717;"></i>
-                        </a>
+                    <div class="stats">
+                        <div class="stat"><span class="stat-num" data-count="35">35</span><span class="stat-unit">%</span><span class="stat-label">faster LLM evaluation at LOCOMeX</span></div>
+                        <div class="stat"><span class="stat-num" data-count="30">30</span><span class="stat-unit">%</span><span class="stat-label">lower API latency with Redis caching</span></div>
+                        <div class="stat"><span class="stat-num" data-count="90">90</span><span class="stat-unit">%</span><span class="stat-label">test coverage, up from 70%</span></div>
+                        <div class="stat"><span class="stat-num">4.0</span><span class="stat-unit"></span><span class="stat-label">GPA, MS Computer Science, NYU</span></div>
                     </div>
                 </div>
             </section>
-           
-       
-            
-            <hr class="m-0" />
+
+            <!-- Experience-->
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
-                    <h2 class="mb-0">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-0">
-                        <div class="flex-grow-1">
-                            <div class="d-flex align-items-center mb-2">
-                                <img class="company-logo me-3" src="assets/img/Intuit_256x256.avif" alt="INTUIT logo" />
-                                <h3 class="mb-0">INTUIT</h3>
-                            </div>
-                            <div class="subheading fs-5 mb-2">Software Engineer - 1</div>
-                            <ul>
-                                <li>Building scalable fintech systems focused on payment reliability, secure transaction processing, and performance at scale.</li>
-                                <li>Developing AI agent driven payment workflows to automate decisioning, improve checkout intelligence, and enhance user experience.</li>
-                            </ul>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Feb 2026 - Present</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-0">
-                        <div class="flex-grow-1">
-                            <div class="d-flex align-items-center mb-2">
-                                <img class="company-logo me-3" src="assets/img/Locomex.png" alt="LOCOMeX logo" />
-                                <h3 class="mb-0">LOCOMeX, Inc</h3>
-                            </div>
-                            <div class="subheading fs-5 mb-2">Software Engineer Intern</div>
-                            <ul>
-                                    <li>Developed ESG scoring in Django with async PDF extraction and LLM processing, integrating Claude 3
-                                        Haiku and LLaMA 3.2 1B via AWS Bedrock, improving response time by 35% and enabling real-time AI evaluation</li>
-                                    <li>Engineered PDF/CSV report exports with document and score history tracking, enabling users to
-                                        retrieve past ESG evaluations and automating report delivery via AWS SES</li>
-                            </ul>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Feb 2025 - Jan 2026</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-0">
-                        <div class="flex-grow-1">
-                            <div class="d-flex align-items-center mb-2">
-                                <img class="company-logo me-3" src="assets/img/publicis.jpeg" alt="Publicis Sapient logo" />
-                                <h3 class="mb-0">Publicis Sapient</h3>
-                            </div>
-                            <div class="subheading fs-5 mb-0"> Software Development Engineer (Associate) - 2</div>
-                            <ul>
-                                <li>Delivered full-stack features for a subscription-based video platform (PSStream), improving usability and release quality through agile delivery.</li>
-                                <li>Implemented role-based access, admin dashboards, and CRUD APIs for content and user analytics, improving team productivity by 40%.</li>
-                                <li>Reduced API latency by up to 30% using Redis caching and endpoint-level performance optimizations.</li>
-                                <li>Built reactive backend services for a health and wellness product (Albertsons) using Spring WebFlux and GraphQL for faster, non-blocking data flows.</li>
-                                <li>Increased test coverage from 70% to 90% with unit and integration testing, reducing post-release incidents by 25%.</li>
-                            </ul>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">May 2022 - Aug 2023</span></div>
-                    </div>
-                    
-                
+                    <h2 class="section-title"><span class="section-idx">02.</span> Experience</h2>
+
+                    <h3 class="group-label"><i class="fa-solid fa-briefcase"></i> Full-time</h3>
+                    <ol class="timeline">
+                        <li class="tl-item current">
+                            <article class="xp-card">
+                                <header class="xp-head">
+                                    <img class="xp-logo" src="assets/img/Intuit_256x256.avif" alt="Intuit logo" />
+                                    <div class="xp-title">
+                                        <h4>Intuit</h4>
+                                        <p class="xp-role">Software Engineer 1 · Backend</p>
+                                        <p class="xp-meta">Payroll (Fintech) · New York, NY · Hybrid</p>
+                                    </div>
+                                    <span class="xp-date"><span class="live-dot"></span>Feb 2026 – Present</span>
+                                </header>
+                                <ul class="xp-points">
+                                    <li>Build and own backend services in <strong>Java</strong> and <strong>Node.js</strong> on <strong>AWS</strong> for Intuit Payroll, end to end from API design to production.</li>
+                                    <li>Partner across multiple teams on features with deep upstream and downstream dependencies, aligning on API contracts, timelines and rollouts.</li>
+                                    <li>Drive <strong>AI-assisted development</strong> across the team, building reusable AI skills and workflows that help us ship faster.</li>
+                                    <li class="more">Optimize service performance and reliability across APIs and <strong>Kafka</strong> event-driven flows.</li>
+                                    <li class="more">Ship services to <strong>Kubernetes</strong> through <strong>Jenkins</strong> and <strong>ArgoCD</strong> (GitOps) CI/CD pipelines.</li>
+                                    <li class="more">Contribute to a <strong>DevOps AI agent</strong> that streamlines engineering workflows.</li>
+                                </ul>
+                                <button class="xp-toggle" type="button" aria-expanded="false">Show more <i class="fa-solid fa-chevron-down"></i></button>
+                                <ul class="chips">
+                                    <li>Java</li><li>Node.js</li><li>AWS</li><li>Kafka</li><li>REST APIs</li><li>Kubernetes</li><li>AI-assisted Dev</li><li>AI Agents</li>
+                                </ul>
+                            </article>
+                        </li>
+                        <li class="tl-item">
+                            <article class="xp-card">
+                                <header class="xp-head">
+                                    <img class="xp-logo" src="assets/img/publicis-crop.jpeg" alt="Publicis Sapient logo" />
+                                    <div class="xp-title">
+                                        <h4>Publicis Sapient</h4>
+                                        <p class="xp-role">Software Development Engineer (Associate) 2</p>
+                                        <p class="xp-meta">PSStream video platform · Albertsons Health &amp; Wellness</p>
+                                    </div>
+                                    <span class="xp-date">May 2022 – Aug 2023</span>
+                                </header>
+                                <ul class="xp-points">
+                                    <li>Cut API latency by up to <strong class="metric">30%</strong> with Redis caching and endpoint-level performance work.</li>
+                                    <li>Built reactive backend services for Albertsons' health &amp; wellness product with <strong>Spring WebFlux</strong> and <strong>GraphQL</strong> for non-blocking data flows.</li>
+                                    <li>Raised test coverage from <strong class="metric">70% to 90%</strong> with unit and integration tests, reducing post-release incidents by <strong class="metric">25%</strong>.</li>
+                                    <li class="more">Implemented role-based access, admin dashboards and CRUD APIs for content and user analytics, improving team productivity by <strong class="metric">40%</strong>.</li>
+                                    <li class="more">Delivered full-stack features for PSStream, a subscription video platform, improving usability and release quality.</li>
+                                </ul>
+                                <button class="xp-toggle" type="button" aria-expanded="false">Show more <i class="fa-solid fa-chevron-down"></i></button>
+                                <ul class="chips">
+                                    <li>Java</li><li>Spring Boot</li><li>WebFlux</li><li>GraphQL</li><li>Redis</li><li>REST APIs</li><li>Microservices</li>
+                                </ul>
+                            </article>
+                        </li>
+                    </ol>
+
+                    <h3 class="group-label"><i class="fa-solid fa-flask"></i> Internship</h3>
+                    <ol class="timeline">
+                        <li class="tl-item">
+                            <article class="xp-card">
+                                <header class="xp-head">
+                                    <img class="xp-logo" src="assets/img/Locomex.png" alt="LOCOMeX logo" />
+                                    <div class="xp-title">
+                                        <h4>LOCOMeX, Inc</h4>
+                                        <p class="xp-role">Software Engineer Intern</p>
+                                        <p class="xp-meta">AI-powered ESG scoring platform</p>
+                                    </div>
+                                    <span class="xp-date">Feb 2025 – Jan 2026</span>
+                                </header>
+                                <ul class="xp-points">
+                                    <li>Built ESG scoring in <strong>Django</strong> with async PDF extraction and LLM processing, integrating Claude 3 Haiku and LLaMA 3.2 1B via <strong>AWS Bedrock</strong>. This cut response time by <strong class="metric">35%</strong> and enabled real-time AI evaluation.</li>
+                                    <li>Engineered PDF/CSV report exports with document and score history, letting users retrieve past ESG evaluations, and automated report delivery via <strong>AWS SES</strong>.</li>
+                                </ul>
+                                <ul class="chips">
+                                    <li>Python</li><li>Django</li><li>JavaScript</li><li>AWS Bedrock</li><li>LLMs</li><li>AWS SES</li>
+                                </ul>
+                            </article>
+                        </li>
+                    </ol>
                 </div>
             </section>
-            <hr class="m-0" />
+
             <!-- Education-->
-<section class="resume-section" id="education">
-    <div class="resume-section-content">
-        <h2 class="mb-5">Education</h2>
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                <div class="d-flex align-items-center mb-3">
-                    <img class="nyu-logo me-3" src="assets/img/NYU_Stacked_RGB_Color.png" alt="NYU Logo" />
-                    <div>
-                        <h3 class="mb-0">New York University, GPA 4.0/4.0</h3>
-                        <div class="subheading mb-0">Master of Science in Computer Science</div>
-                    </div>
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="section-title"><span class="section-idx">03.</span> Education</h2>
+                    <ol class="timeline">
+                        <li class="tl-item">
+                            <article class="xp-card">
+                                <header class="xp-head">
+                                    <img class="xp-logo" src="assets/img/NYU_Stacked_RGB_Color.png" alt="NYU logo" />
+                                    <div class="xp-title">
+                                        <h4>New York University</h4>
+                                        <p class="xp-role">MS in Computer Science · <span class="gpa">GPA 4.0 / 4.0</span></p>
+                                        <p class="xp-meta">New York, NY · Academic Achievement Award · Merit Scholarship</p>
+                                    </div>
+                                    <span class="xp-date">Aug 2023 – May 2025</span>
+                                </header>
+                                <p class="courses-label">Key courses</p>
+                                <ul class="chips chips-soft">
+                                    <li>Algorithms</li><li>Cloud Computing</li><li>Big Data</li><li>Machine Learning</li><li>Deep Learning</li><li>Software Engineering</li><li>Operating Systems</li><li>Data Science</li>
+                                </ul>
+                            </article>
+                        </li>
+                        <li class="tl-item">
+                            <article class="xp-card">
+                                <header class="xp-head">
+                                    <img class="xp-logo" src="assets/img/iitilogo.png" alt="IIT Indore logo" />
+                                    <div class="xp-title">
+                                        <h4>Indian Institute of Technology, Indore</h4>
+                                        <p class="xp-role">B.Tech in Computer Science &amp; Engineering</p>
+                                        <p class="xp-meta">Indore, India</p>
+                                    </div>
+                                    <span class="xp-date">Jul 2018 – May 2022</span>
+                                </header>
+                                <p class="courses-label">Key courses</p>
+                                <ul class="chips chips-soft">
+                                    <li>Advanced Algorithms</li><li>Parallel Computing</li><li>Operating Systems</li><li>Computer Architecture</li><li>Machine Learning</li><li>Computer Vision</li><li>Computer Graphics</li>
+                                </ul>
+                            </article>
+                        </li>
+                    </ol>
                 </div>
-                <p> <span class="key-courses">Key Courses:</span> Design and Analysis of Algorithms, Cloud Computing, Big Data, Machine Learning, Deep Learning, Software Engineering, Operating Systems, Foundations of Data Science</p>
+            </section>
 
-            </div>
-            <div class="flex-shrink-0"><span class="text-primary">Aug 2023 - May 2025</span></div>
-        </div>
-
-        <div class="d-flex flex-column flex-md-row justify-content-between">
-            <div class="flex-grow-1">
-                <div class="d-flex align-items-center mb-3">
-                    <img class="iiti-logo me-3" src="assets/img/iitilogo.png" alt="NYU Logo" />
-                    <div>
-                        <h3 class="mb-0">Indian Institute of Technology, Indore</h3>
-                        <div class="subheading mb-0">B.Tech in Computer Science & Engineering</div>
-                    </div>
-                </div>
-                <p ><span class="key-courses">Key Courses:  </span>Advanced Algorithms, Optimization of Algorithms, Design and Analysis of Algorithms, Parallel Computing, Operating Systems, Machine Learning, Computer Vision, Computer Graphics, 
-                    Computer Architecture, Computer Programming</p>
-                
-            </div>
-            <div class="flex-shrink-0"><span class="text-primary">July 2018 - May 2022</span></div>
-        </div>
-    </div>
-</section>
-
-            <hr class="m-0" />
             <!-- Skills-->
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <div class="skills-carousel-container">
-                        <div class="skills-carousel">
-                            <ul class="list-inline dev-icons skills-animate">
-                                <li class="list-inline-item skill-item">
-                                    <div class="skill-wrapper">
-                                        
-                                        <i class="fab fa-html5" style="color: #E34F26; font-size: 2rem;"></i>
-                                        <span class="skill-name">HTML5</span>
-                                    </div>
-                                </li>
-                                <li class="list-inline-item skill-item">
-                                    <div class="skill-wrapper">
-                                        <i class="fab fa-css3-alt" style="color: #1572B6; font-size: 2rem;"></i>
-                                        <span class="skill-name">CSS3</span>
-                                    </div>
-                                </li>
-                                <li class="list-inline-item skill-item">
-                                    <div class="skill-wrapper">
-                                        <i class="fab fa-js-square" style="color: #F7DF1E; font-size: 2rem;"></i>
-                                        <span class="skill-name">JavaScript</span>
-                                    </div>
-                                </li>
-                                <li class="list-inline-item skill-item">
-                                    <div class="skill-wrapper">
-                                        <i class="fab fa-react" style="color: #61DAFB;  font-size: 2rem;"></i>
-                                        <span class="skill-name">React</span>
-                                    </div>
-                                </li>
-                                <li class="list-inline-item skill-item">
-                                    <div class="skill-wrapper">
-                                        <i class="fab fa-npm" style="color: #CB3837; font-size: 2rem;"></i>
-                                        <span class="skill-name">NPM</span>
-                                    </div>
-                                </li>
-                                <li class="list-inline-item skill-item">
-                                    <div class="skill-wrapper">
-                                        <i class="fab fa-python" style="color: #306998; font-size: 2rem;"></i>
-                                        <span class="skill-name">Python</span>
-                                    </div>
-                                </li>
-                                <li class="list-inline-item skill-item">
-                                    <div class="skill-wrapper">
-                                        <i class="fab fa-docker" style="color: #2496ED; font-size: 2rem;"></i>
-                                        <span class="skill-name">Docker</span>
-                                    </div>
-                                </li>
-                                <li class="list-inline-item skill-item">
-                                    <div class="skill-wrapper">
-                                        <i class="fab fa-java" style="color: #007396; font-size: 2rem;"></i>
-                                        <span class="skill-name">Java</span>
-                                    </div>
-                                </li>
-                                <li class="list-inline-item skill-item">
-                                    <div class="skill-wrapper">
-                                        <i class="fab fa-aws" style="color: #FF9900; font-size: 2rem;"></i>
-                                        <span class="skill-name">AWS</span>
-                                    </div>
-                                </li>
-                                <li class="list-inline-item skill-item">
-                                    <div class="skill-wrapper">
-                                        <i class="fab fa-github" style="color: #181717;font-size: 2rem;"></i>
-                                        <span class="skill-name">GitHub</span>
-                                    </div>
-                                </li>
-                                <li class="list-inline-item skill-item">
-                                    <div class="skill-wrapper">
-                                        <span style="font-weight: bold;font-size: 2rem;">C</span>
-                                        <span class="skill-name">C</span>
-                                    </div>
-                                </li>
-                                <li class="list-inline-item skill-item">
-                                    <div class="skill-wrapper">
-                                        <span style="font-weight: bold;font-size: 2rem;">C++</span>
-                                        <span class="skill-name">C++</span>
-                                    </div>
-                                </li>
-                            </ul>
-                            <!-- Duplicate list for infinite scroll -->
-                            <ul class="list-inline dev-icons skills-animate">
-                                <!-- Same content as above -->
-                                <li class="list-inline-item skill-item">
-                                    <div class="skill-wrapper">
-                                        <i class="fab fa-html5" style="color: #E34F26;"></i>
-                                        <span class="skill-name">HTML5</span>
-                                    </div>
-                                </li>
-                                <li class="list-inline-item skill-item">
-                                    <div class="skill-wrapper">
-                                        <i class="fab fa-css3-alt" style="color: #1572B6;"></i>
-                                        <span class="skill-name">CSS3</span>
-                                    </div>
-                                </li>
-                                <li class="list-inline-item skill-item">
-                                    <div class="skill-wrapper">
-                                        <i class="fab fa-js-square" style="color: #F7DF1E;"></i>
-                                        <span class="skill-name">JavaScript</span>
-                                    </div>
-                                </li>
-                                <li class="list-inline-item skill-item">
-                                    <div class="skill-wrapper">
-                                        <i class="fab fa-react" style="color: #61DAFB;"></i>
-                                        <span class="skill-name">React</span>
-                                    </div>
-                                </li>
-                                <li class="list-inline-item skill-item">
-                                    <div class="skill-wrapper">
-                                        <i class="fab fa-npm" style="color: #CB3837;"></i>
-                                        <span class="skill-name">NPM</span>
-                                    </div>
-                                </li>
-                                <li class="list-inline-item skill-item">
-                                    <div class="skill-wrapper">
-                                        <i class="fab fa-python" style="color: #306998;"></i>
-                                        <span class="skill-name">Python</span>
-                                    </div>
-                                </li>
-                                <li class="list-inline-item skill-item">
-                                    <div class="skill-wrapper">
-                                        <i class="fab fa-docker" style="color: #2496ED;"></i>
-                                        <span class="skill-name">Docker</span>
-                                    </div>
-                                </li>
-                                <li class="list-inline-item skill-item">
-                                    <div class="skill-wrapper">
-                                        <i class="fab fa-java" style="color: #007396;"></i>
-                                        <span class="skill-name">Java</span>
-                                    </div>
-                                </li>
-                                <li class="list-inline-item skill-item">
-                                    <div class="skill-wrapper">
-                                        <i class="fab fa-aws" style="color: #FF9900;"></i>
-                                        <span class="skill-name">AWS</span>
-                                    </div>
-                                </li>
-                                <li class="list-inline-item skill-item">
-                                    <div class="skill-wrapper">
-                                        <i class="fab fa-github" style="color: #181717;"></i>
-                                        <span class="skill-name">GitHub</span>
-                                    </div>
-                                </li>
-                                <li class="list-inline-item skill-item">
-                                    <div class="skill-wrapper">
-                                        <span style="font-weight: bold; font-size: 2rem;">C</span>
-                                        <span class="skill-name">C</span>
-                                    </div>
-                                </li>
-                                <li class="list-inline-item skill-item">
-                                    <div class="skill-wrapper">
-                                        <span style="font-weight: bold; font-size: 2rem;">C++</span>
-                                        <span class="skill-name">C++</span>
-                                    </div>
-                                </li>
-                            </ul>
+                    <h2 class="section-title"><span class="section-idx">04.</span> Skills</h2>
+                    <p class="skills-legend"><span class="legend-chip core">core</span> daily-driver stack <span class="legend-chip">other</span> worked with</p>
+                    <div class="skills-grid">
+                        <div class="skill-group">
+                            <h4><i class="fa-solid fa-server"></i> Backend</h4>
+                            <ul class="chips"><li class="core">Java</li><li class="core">Spring Boot</li><li class="core">Node.js</li><li class="core">REST APIs</li><li>Microservices</li><li>Spring WebFlux</li><li>GraphQL</li><li>Django</li><li>Flask</li></ul>
+                            <p class="skill-note">Frontend, occasionally: React</p>
+                        </div>
+                        <div class="skill-group">
+                            <h4><i class="fa-solid fa-code"></i> Languages</h4>
+                            <ul class="chips"><li class="core">Java</li><li class="core">JavaScript</li><li>TypeScript</li><li>Python</li><li>SQL</li><li>C / C++</li></ul>
+                        </div>
+                        <div class="skill-group">
+                            <h4><i class="fa-solid fa-database"></i> Data &amp; Messaging</h4>
+                            <ul class="chips"><li class="core">Kafka</li><li>PostgreSQL</li><li>Redis</li><li>DynamoDB</li><li>OpenSearch</li><li>Spark / PySpark</li></ul>
+                        </div>
+                        <div class="skill-group">
+                            <h4><i class="fa-solid fa-cloud"></i> Cloud &amp; DevOps</h4>
+                            <ul class="chips"><li class="core">AWS</li><li>Lambda</li><li>S3</li><li>SQS</li><li>Kubernetes</li><li>Docker</li><li>Jenkins</li><li>ArgoCD</li><li>GCP</li></ul>
+                        </div>
+                        <div class="skill-group">
+                            <h4><i class="fa-solid fa-vial-circle-check"></i> Testing &amp; Observability</h4>
+                            <ul class="chips"><li>JUnit</li><li>Mockito</li><li>TDD</li><li>Splunk</li><li>Grafana</li><li>Prometheus</li></ul>
+                        </div>
+                        <div class="skill-group">
+                            <h4><i class="fa-solid fa-brain"></i> AI &amp; AI-assisted Dev</h4>
+                            <ul class="chips"><li class="core">AI-assisted Development</li><li class="core">AI Coding Tools</li><li>LLMs</li><li>AWS Bedrock</li><li>AI Agents</li><li>Fine-tuning (LoRA)</li><li>TensorFlow / Keras</li><li>NLP</li></ul>
                         </div>
                     </div>
-
-                    <div class="subheading mb-3 mt-5">Workflow</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Asynchronous & Reactive Programming
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Object oriented Programming
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Responsive Web Design
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
-                        </li>
-                    </ul>
+                    <div class="practices">
+                        <h4><i class="fa-solid fa-diagram-project"></i> Engineering practices</h4>
+                        <ul class="chips chips-soft"><li>Distributed Systems</li><li>Event-driven Design</li><li>API Design</li><li>Performance Optimization</li><li>Caching</li><li>Async &amp; Reactive</li><li>Cross-team Delivery</li><li>CI/CD</li></ul>
+                    </div>
                 </div>
             </section>
-            <hr class="m-0" />
 
+            <!-- Projects-->
             <section class="resume-section" id="projects">
                 <div class="resume-section-content">
-                    <h2 class="mb-2">Projects (13)</h2>
-            
-                    <!-- Tabs Nav -->
-                    <ul class="nav nav-tabs mb-3" id="projectTabs" role="tablist">
+                    <h2 class="section-title"><span class="section-idx">05.</span> Projects <span class="count">10</span></h2>
+
+                    <p class="group-label"><i class="fa-solid fa-star"></i> Featured</p>
+                    <div class="proj-grid featured-grid">
+                        <a class="proj-card featured" href="https://github.com/gcivil-nyu-org/INET-Wednesday-Spring2024-Team-2" target="_blank" rel="noopener">
+                            <div class="proj-top"><span class="star-badge">&#9733; featured</span><i class="fab fa-github"></i></div>
+                            <h5>RentWiseNYC</h5>
+                            <p>Full Django backend that merges NYC open data (bedbugs, transit, 311 complaints, landlord history) into a searchable listings service, shipped with CI on AWS.</p>
+                            <ul class="chips chips-sm"><li>Django</li><li>Python</li><li>Travis CI</li><li>AWS</li></ul>
+                        </a>
+                        <a class="proj-card featured" href="https://github.com/aru456/PhotoFind-AI" target="_blank" rel="noopener">
+                            <div class="proj-top"><span class="star-badge">&#9733; featured</span><i class="fab fa-github"></i></div>
+                            <h5>PhotoFind-Index AI</h5>
+                            <p>Serverless, event-driven image search: S3 uploads trigger Lambda indexing with Rekognition labels into OpenSearch, queried in natural language through Lex.</p>
+                            <ul class="chips chips-sm"><li>Python</li><li>Lambda</li><li>S3</li><li>OpenSearch</li><li>API Gateway</li></ul>
+                        </a>
+                        <a class="proj-card featured" href="https://github.com/aru456/Detecting-Prompt-Injections-with-Fine-Tuned-Transformer-LLMs" target="_blank" rel="noopener">
+                            <div class="proj-top"><span class="star-badge">&#9733; featured</span><i class="fab fa-github"></i></div>
+                            <h5>Prompt-Injection Detection</h5>
+                            <p>Fine-tuned XLM-RoBERTa to catch prompt-injection attacks on LLMs, using adversarial training to harden AI-powered systems.</p>
+                            <ul class="chips chips-sm"><li>NLP</li><li>Transformers</li><li>Fine-tuning</li></ul>
+                        </a>
+                    </div>
+                    <p class="group-label all-label"><i class="fa-solid fa-folder-tree"></i> More projects</p>
+                    <ul class="nav nav-tabs proj-tabs" id="projectTabs" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="sde-tab" data-bs-toggle="tab" data-bs-target="#sde" type="button" role="tab">Software Dev & Engineering</button>
+                            <button class="nav-link active" id="sde-tab" data-bs-toggle="tab" data-bs-target="#sde" type="button" role="tab">Engineering <span class="count">3</span></button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="ml-tab" data-bs-toggle="tab" data-bs-target="#ml" type="button" role="tab">AI / ML / DL</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="data-tab" data-bs-toggle="tab" data-bs-target="#data" type="button" role="tab"> Big Data/ Data Science </button>
+                            <button class="nav-link" id="ml-tab" data-bs-toggle="tab" data-bs-target="#ml" type="button" role="tab">AI / ML &amp; Data <span class="count">4</span></button>
                         </li>
                     </ul>
-            
-                    <!-- Tab Content -->
+
                     <div class="tab-content" id="projectTabsContent">
                         <!-- SDE Projects -->
                         <div class="tab-pane fade show active" id="sde" role="tabpanel">
-                            <div class="row g-2">
-                       
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <a class="card project-card h-100" href="https://github.com/gcivil-nyu-org/INET-Wednesday-Spring2024-Team-2" style="text-decoration: none;" target="_blank">
-                                        <div class="card-body">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <h5 class="card-title">RentWiseNYC</h5>
-                                                <i class="fab fa-github" style="color: #181717;"></i>
-                                            </div>
-                                            <p class="card-text">An NYC apartment search app using data on bedbugs, nearby transportation, 311 complaints, and landlord history. Users can filter, favorite, share listings, view landlord details, while landlords can post and manage multiple listings</p>
-                                            <i class="fa-solid fa-layer-group fa-xs card-text"></i>
-                                            <span class="card-text-stack">Django, JavaScript, HTML/CSS, Travis CI, AWS</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <a class="card project-card h-100" href="https://github.com/aru456/PhotoFind-AI" style="text-decoration: none;" target="_blank">
-                                        <div class="card-body">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <h5 class="card-title">PhotoFind-Index  -  AI</h5>
-                                                <i class="fab fa-github" style="color: #181717;"></i>
-                                            </div>
-                                            <p class="card-text">Intelligent image search platform using AWS. Combines Rekognition, Lex Bot, and Elasticsearch to index and search images via custom or AI-generated labels from simple keyword-based queries.</p>
-                                            <i class="fa-solid fa-layer-group fa-xs card-text"></i>
-                                            <span class="card-text-stack"> Python, AWS Lambda, S3, Rekognition, Elasticsearch (OpenSearch), LexBot, API Gateway</span>
-                                        </div>
-                                    </a>
-                                </div>
-        
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <a class="card project-card h-100" href="https://github.com/vamshinaik309/wealth-wave" style="text-decoration: none;" target="_blank">
-                                        <div class="card-body">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <h5 class="card-title">WealthWave - Freedom to your financials</h5>
-                                                <i class="fab fa-github" style="color: #181717;"></i>
-                                            </div>
-                                            <p class="card-text">Collaborated on WealthWave, integrating AWS cloud and AI to automate bill digitization and financial insights. Used Textract, DynamoDB, and GPT to streamline expense tracking and enhance user understanding.</p>
-                                            <i class="fa-solid fa-layer-group fa-xs card-text"></i>
-                                            <span class="card-text-stack">Flask, AWS DynamoDB, AWS SQS, OpenAI API</span>
-                                        </div>
-                                    </a>
-                                </div>
-         
-                             
-        
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <a class="card project-card h-100" href="https://github.com/aru456/coupon-manager" style="text-decoration: none;" target="_blank">
-                                        <div class="card-body">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <h5 class="card-title">Coupon Management - IOS Wallet Passes</h5>
-                                                <i class="fab fa-github" style="color: #181717;"></i>
-                                            </div>
-                                            <p class="card-text">Developed a coupon management & redemption system using Google Apps Script. Generates QR codes and Apple Wallet passes, sends via email, and enables admin-verified redemption using Google Sheets and Passcreator API.</p>
-                                            <i class="fa-solid fa-layer-group fa-xs card-text"></i>
-                                            <span class="card-text-stack"> Google Apps Script, Sheets, Passcreator API</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <a class="card project-card h-100" href="https://github.com/aru456/aru456.github.io" style="text-decoration: none;" target="_blank">
-                                        <div class="card-body">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <h5 class="card-title">My Personal Portfolio</h5>
-                                                <i class="fab fa-github" style="color: #181717;"></i>
-                                            </div>
-                                            <p class="card-text">Created a personal portfolio website to showcase my academic background, technical skills, and project work. The site features dedicated sections for About Me, education, certifications, and detailed project write-ups across stack</p>
-                                            <i class="fa-solid fa-layer-group fa-xs card-text"></i>
-                                            <span class="card-text-stack">JavaScript, HTML, CSS, Bootstrap, GitHub Pages</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <a class="card project-card h-100" href="https://github.com/aru456/strace-xv6-os" style="text-decoration: none;" target="_blank">
-                                        <div class="card-body">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <h5 class="card-title">Strace - XV6 Operating Systems</h5>
-                                                <i class="fab fa-github" style="color: #181717;"></i>
-                                            </div>
-                                            <p class="card-text">Implemented strace in XV6 OS to trace and log system calls, supporting options like -e, -s, and -f, with formatted output, file logging, and child process tracking to enhance debugging and emulate Linux strace functionality.</p>
-                                            <i class="fa-solid fa-layer-group fa-xs card-text"></i>
-                                            <span class="card-text-stack">OS, XV6, Strace, C (Programming), QEMU, GIT</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <div class="card project-card h-100" style="text-decoration: none;" target="_blank">
-                                        <div class="card-body">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <h5 class="card-title">Games in JavaScript</h5>
-                                                <a href="https://github.com/aru456/games-js" target="_blank">
-                                                    <i class="fab fa-github" style="color: #181717;"></i>
-                                                </a>
-                                            </div>
-                                            <div class="">
-                                                <p class="card-text"> Wordle : 
-                                                    <a href="https://static-shelf.s3.us-east-1.amazonaws.com/games-js/wordle/wordle.html" target="_blank" style="text-decoration: none; font-weight: bold;">
-                                                        <small> Launch Game <i class="fa-solid fa-up-right-from-square fa-sm"></i> </small>
-                                                    </a>
-                                                </p>
-                                                
-                                                <p class="card-text"> Tic Tac Toe : 
-                                                    <a href="https://static-shelf.s3.us-east-1.amazonaws.com/games-js/TicTacToe/index.html" target="_blank" style="text-decoration: none;  font-weight: bold;">
-                                                    <small> Launch Game <i class="fa-solid fa-up-right-from-square fa-sm"></i> </small>
-                                                    </a>
-                                                </p>
-                                                <p class="card-text">Whac-A-Mole :
-                                                    <a href="https://static-shelf.s3.us-east-1.amazonaws.com/games-js/whac-a-mole/index.html" target="_blank" style="text-decoration: none;  font-weight: bold;">
-                                                        <small>Launch Game <i class="fa-solid fa-up-right-from-square fa-sm"></i> </small>
-                                                    </a>
-                                                </p>
-                                            
-                                                <p class="card-text"> Calculator :
-                                                    <a href="https://static-shelf.s3.us-east-1.amazonaws.com/games-js/calculator/index.html" target="_blank" style="text-decoration: none;  font-weight: bold;">
-                                                    <small>Launch WebApp <i class="fa-solid fa-up-right-from-square fa-sm"></i> </small>
-                                                    </a>
-                                                </p>
-                                            </div>
-                                
-        
-                                            <i class="fa-solid fa-layer-group fa-xs card-text"></i>
-                                            <span class="card-text-stack">JavaScript, HTML, CSS, AWS S3</span>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="proj-grid">
+                                <a class="proj-card" href="https://github.com/vamshinaik309/wealth-wave" target="_blank" rel="noopener">
+                                    <div class="proj-top"><i class="fa-regular fa-folder-open"></i><i class="fab fa-github"></i></div>
+                                    <h5>WealthWave</h5>
+                                    <p>Automates bill digitization and financial insights with AWS and AI, using Textract, DynamoDB and GPT to streamline expense tracking.</p>
+                                    <ul class="chips chips-sm"><li>Flask</li><li>DynamoDB</li><li>SQS</li><li>OpenAI API</li></ul>
+                                </a>
+                                <a class="proj-card" href="https://github.com/aru456/strace-xv6-os" target="_blank" rel="noopener">
+                                    <div class="proj-top"><i class="fa-regular fa-folder-open"></i><i class="fab fa-github"></i></div>
+                                    <h5>strace for xv6 OS</h5>
+                                    <p>Implemented strace in the xv6 kernel to trace system calls, with -e, -s and -f options, formatted output, file logging and child-process tracking.</p>
+                                    <ul class="chips chips-sm"><li>C</li><li>xv6</li><li>QEMU</li><li>OS internals</li></ul>
+                                </a>
+                                <a class="proj-card" href="https://github.com/aru456/coupon-manager" target="_blank" rel="noopener">
+                                    <div class="proj-top"><i class="fa-regular fa-folder-open"></i><i class="fab fa-github"></i></div>
+                                    <h5>Coupon Issuing &amp; Redemption</h5>
+                                    <p>End-to-end coupon lifecycle: issues unique QR codes as Apple Wallet passes via the Passcreator API, delivers them by email, and verifies one-time redemption through an admin flow, with Google Sheets as the datastore.</p>
+                                    <ul class="chips chips-sm"><li>REST API integration</li><li>Apple Wallet</li><li>QR codes</li><li>Apps Script</li></ul>
+                                </a>
                             </div>
                         </div>
-            
+
                         <!-- ML / DL Projects -->
                         <div class="tab-pane fade" id="ml" role="tabpanel">
-                            <div class="row g-2">
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <a class="card project-card h-100" href="https://github.com/aru456/Detecting-Prompt-Injections-with-Fine-Tuned-Transformer-LLMs" style="text-decoration: none;" target="_blank">
-                                        <div class="card-body">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <h5 class="card-title">Detecting Prompt Injections with Fine-Tuned Transformer LLMs (XLM-RoBERTa)</h5>
-                                                <i class="fab fa-github" style="color: #181717;"></i>
-                                            </div>
-                                            <p class="card-text">Built an NLP classification system to detect prompt injection attacks in language models, improving system resilience through adversarial training and security-focused fine-tuning.</p>
-                                            <i class="fa-solid fa-layer-group fa-xs card-text"></i>
-                                            <span class="card-text-stack">DL, NLP, Fine Tuning, BERT (Language Model)</span>
-                                          
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <a class="card project-card h-100" href="https://github.com/aru456/FineTune-Llama3.1-8B-for-Mathematical-Reasoning" style="text-decoration: none;" target="_blank">
-                                        <div class="card-body">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <h5 class="card-title">Fine-Tuning Meta-Llama-3.1-8B for Mathematical Reasoning Tasks                                        </h5>
-                                                <i class="fab fa-github" style="color: #181717;"></i>
-                                            </div>
-                                            <p class="card-text"> Developed a fine-tuned version of Meta-Llama-3.1-8B for mathematical answer verification, leveraging LoRA and 4-bit quantization to optimize efficiency and reduce memory usage. </p>
-                                            <i class="fa-solid fa-layer-group fa-xs card-text"></i>
-                                            <span class="card-text-stack">DL, NLP, LLM Fine-Tuning, LoRA, Quantization</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <a class="card project-card h-100" href="https://github.com/aru456/Anomaly-Detection-in-Videos-BTP-Thesis" style="text-decoration: none;" target="_blank">
-                                        <div class="card-body">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <h5 class="card-title">Design and Analysis of GAN Architecture for Anomaly Detection</h5>
-                                                <i class="fab fa-github" style="color: #181717;"></i>
-                                            </div>
-                                            <p class="card-text">Designed an anomaly detection system for video surveillance using a GAN-based classifier to identify unusual activities through reconstruction and adversarial learning on benchmark datasets.</p>
-                                            <i class="fa-solid fa-layer-group fa-xs card-text"></i>
-                                            <span class="card-text-stack">GANs, DL, Computer Vision, Keras, TensorFlow</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <a class="card project-card h-100" href="https://github.com/aru456/Steel-Defects-using-Deep-Learning" style="text-decoration: none;" target="_blank">
-                                        <div class="card-body">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <h5 class="card-title">Detection of Steel Defects using Deep Learning
-                                                </h5>
-                                                <i class="fab fa-github" style="color: #181717;"></i>
-                                            </div>
-                                            <p class="card-text">Developed a deep learning solution for steel defect detection using UNet with ResNet34, leveraging transfer learning, image preprocessing, and threshold-based segmentation. </p>
-                                            <i class="fa-solid fa-layer-group fa-xs card-text"></i>
-                                            <span class="card-text-stack">DL, CV, Transfer Learning, Image Segmentation</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-            
-                        <!-- Data Science Projects -->
-                        <div class="tab-pane fade" id="data" role="tabpanel">
-                            <div class="row g-2">
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <a class="card project-card h-100" href="https://github.com/TekuriSaiAkhil/BIG-DATA" style="text-decoration: none;" target="_blank">
-                                        <div class="card-body">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <h5 class="card-title">Predictive Modeling for Solar Energy Production
-                                                </h5>
-                                                <i class="fab fa-github" style="color: #181717;"></i>
-                                            </div>
-                                            <p class="card-text">Built a real-time predictive model for solar energy output using live weather and irradiance data to support smart grid optimization and reduce reliance on non-renewables.</p>
-                                            <i class="fa-solid fa-layer-group fa-xs card-text"></i>
-                                            <span class="card-text-stack">PySpark, Spark MLlib, Kafka, Tableau, Big Data</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <a class="card project-card h-100" href="https://github.com/aru456/datascience-alcohols-impact-on-expectancy" style="text-decoration: none;" target="_blank">
-                                        <div class="card-body">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <h5 class="card-title">Quantifying Alcohol’s Impact on Life Expectancy</h5>
-                                                <i class="fab fa-github" style="color: #181717;"></i>
-                                            </div>
-                                            <p class="card-text">Built a Bayesian regression model on WHO data to estimate alcohol's direct effect on life expectancy, adjusting for schooling and validating fit through posterior predictive checks.</p>
-                                            <i class="fa-solid fa-layer-group fa-xs card-text"></i>
-                                            <span class="card-text-stack">Data Science, Python, PyMC, ArVIZ, Seaborn</span>
-                                        </div>
-                                    </a>
-                                </div>
+                            <div class="proj-grid">
+                                <a class="proj-card" href="https://github.com/aru456/FineTune-Llama3.1-8B-for-Mathematical-Reasoning" target="_blank" rel="noopener">
+                                    <div class="proj-top"><i class="fa-solid fa-square-root-variable"></i><i class="fab fa-github"></i></div>
+                                    <h5>Llama-3.1-8B for Math Reasoning</h5>
+                                    <p>Fine-tuned Meta-Llama-3.1-8B for mathematical answer verification, using LoRA and 4-bit quantization to cut memory use.</p>
+                                    <ul class="chips chips-sm"><li>LLM</li><li>LoRA</li><li>Quantization</li></ul>
+                                </a>
+                                <a class="proj-card" href="https://github.com/aru456/Anomaly-Detection-in-Videos-BTP-Thesis" target="_blank" rel="noopener">
+                                    <div class="proj-top"><i class="fa-solid fa-video"></i><i class="fab fa-github"></i></div>
+                                    <h5>GAN-based Video Anomaly Detection</h5>
+                                    <p>B.Tech thesis: a GAN-based classifier that flags unusual activity in surveillance video through reconstruction and adversarial learning.</p>
+                                    <ul class="chips chips-sm"><li>GANs</li><li>Computer Vision</li><li>TensorFlow</li><li>Keras</li></ul>
+                                </a>
+                                <a class="proj-card" href="https://github.com/aru456/Steel-Defects-using-Deep-Learning" target="_blank" rel="noopener">
+                                    <div class="proj-top"><i class="fa-solid fa-industry"></i><i class="fab fa-github"></i></div>
+                                    <h5>Steel Defect Segmentation</h5>
+                                    <p>Steel defect detection with UNet + ResNet34, using transfer learning, image preprocessing and threshold-based segmentation.</p>
+                                    <ul class="chips chips-sm"><li>UNet</li><li>ResNet34</li><li>Segmentation</li></ul>
+                                </a>
+                                <a class="proj-card" href="https://github.com/TekuriSaiAkhil/BIG-DATA" target="_blank" rel="noopener">
+                                    <div class="proj-top"><i class="fa-solid fa-solar-panel"></i><i class="fab fa-github"></i></div>
+                                    <h5>Real-time Solar Output Prediction</h5>
+                                    <p>Streaming model that predicts solar energy output from live weather and irradiance data to support smart-grid optimization.</p>
+                                    <ul class="chips chips-sm"><li>PySpark</li><li>Spark MLlib</li><li>Kafka</li><li>Tableau</li></ul>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            
-            
+
             <!-- Awards-->
             <section class="resume-section" id="awards">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Certifications</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <a href="https://www.linkedin.com/posts/sai-aravind456_nyu-nyutandon-iitindore-activity-7272017665085378560-HhYS?utm_source=share&utm_medium=member_desktop&rcm=ACoAACjHvT4BaIWHWPpu-F5ypp6sWEvgaQNHLlc" target="_blank">
-                                <span class="fa-li"><i class="fas fa-medal text-warning"></i></span>
-                                Academic Achievement Award - MS in Computer Science (NYU)
-                            </a>
-                       
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Wasserman Grant Recipient- New York University (NYU)
-                        </li> 
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Merit Scholarship Recipient - New York University (NYU) 
-                        </li>
-                        <li>
-                            <a href="https://drive.google.com/file/d/1Hte4-h40QwDjfl9vfhMmwCwBRQtDpQ12/view?usp=sharing" target="_blank">
-                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
-                            Amazon Web Services(AWS) - Certified Cloud Practitioner
-                            </a>
-                        </li>
-                        <li>
-                             <a href="https://drive.google.com/file/d/1939c9YYM--sRrO68MiEKVMzTPxyTwwjl/view?usp=sharing" target="_blank">
-                                 <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
-                                  Google Cloud Certified (GCP) - Cloud Digital Leader
-                             </a>
-                            
-                        </li>
-                        <li>
-                            <a href="https://credentials.databricks.com/bab3a1c3-aa0f-421b-b198-30c786d6d644#acc.QhMPEOcb" target="_blank">
-                                <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
-                                Databricks - Generative AI Fundamentals
-                            </a>
-                           
-                       </li>
-                        <li>
-                            <a href="https://www.codecademy.com/profiles/system1323705661/certificates/af00e5032d0a68cc84879983f5d8333b" target="_blank">
-                                <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
-                                Codecademy - Learn React Certification
-                            </a>
-                       
-                        </li>
-                       <li>
-                            <a href="https://www.codecademy.com/profiles/system1323705661/certificates/042a4e5884e3eb6ea1f2a12be6abb851" target="_blank">
-                                <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
-                                Codecademy - Learn SQL Certification
-                            </a>
-                       
-                        </li>
-                    </ul>
+                    <h2 class="section-title"><span class="section-idx">06.</span> Awards &amp; Certifications</h2>
+                    <div class="award-grid">
+                        <a class="award" href="https://www.linkedin.com/posts/sai-aravind456_nyu-nyutandon-iitindore-activity-7272017665085378560-HhYS" target="_blank" rel="noopener">
+                            <i class="fa-solid fa-medal"></i><span><strong>Academic Achievement Award</strong><small>MS Computer Science · NYU</small></span>
+                        </a>
+                        <div class="award">
+                            <i class="fa-solid fa-trophy"></i><span><strong>Wasserman Grant Recipient</strong><small>New York University</small></span>
+                        </div>
+                        <div class="award">
+                            <i class="fa-solid fa-trophy"></i><span><strong>Merit Scholarship Recipient</strong><small>New York University</small></span>
+                        </div>
+                        <a class="award" href="https://drive.google.com/file/d/1Hte4-h40QwDjfl9vfhMmwCwBRQtDpQ12/view?usp=sharing" target="_blank" rel="noopener">
+                            <i class="fab fa-aws"></i><span><strong>AWS Certified Cloud Practitioner</strong><small>Amazon Web Services</small></span>
+                        </a>
+                        <a class="award" href="https://drive.google.com/file/d/1939c9YYM--sRrO68MiEKVMzTPxyTwwjl/view?usp=sharing" target="_blank" rel="noopener">
+                            <i class="fab fa-google"></i><span><strong>Cloud Digital Leader</strong><small>Google Cloud</small></span>
+                        </a>
+                        <a class="award" href="https://credentials.databricks.com/bab3a1c3-aa0f-421b-b198-30c786d6d644" target="_blank" rel="noopener">
+                            <i class="fa-solid fa-certificate"></i><span><strong>Generative AI Fundamentals</strong><small>Databricks</small></span>
+                        </a>
+                        <a class="award" href="https://www.codecademy.com/profiles/system1323705661/certificates/af00e5032d0a68cc84879983f5d8333b" target="_blank" rel="noopener">
+                            <i class="fab fa-react"></i><span><strong>Learn React</strong><small>Codecademy</small></span>
+                        </a>
+                        <a class="award" href="https://www.codecademy.com/profiles/system1323705661/certificates/042a4e5884e3eb6ea1f2a12be6abb851" target="_blank" rel="noopener">
+                            <i class="fa-solid fa-database"></i><span><strong>Learn SQL</strong><small>Codecademy</small></span>
+                        </a>
+                    </div>
                 </div>
             </section>
-        </div>
+
+            <footer class="site-footer">
+                <p><span class="prompt">$</span> echo "thanks for stopping by"</p>
+                <p class="muted">Hand-built with HTML, CSS &amp; vanilla JS · deployed on GitHub Pages · © <span id="year">2026</span> Sai Aravind Yanamadala</p>
+            </footer>
+        </main>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
