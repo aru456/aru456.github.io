@@ -3,6 +3,10 @@
    Loaded after styles.css; everything here intentionally overrides it.
    ========================================================================== */
 
+/* ---------- Icons: inline Font Awesome 6.3.0 SVGs (CC BY 4.0), base styles from svg-with-js.css ---------- */
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa { overflow: visible; box-sizing: content-box; }
+.svg-inline--fa { display: var(--fa-display, inline-block); height: 1em; overflow: visible; vertical-align: -.125em; }
+
 /* ---------- Theme layout rules still in use (kept first to preserve cascade order) ---------- */
 #sideNav { padding: 1rem; }
 @media (max-width: 991.98px) { #sideNav .navbar-brand { padding: 0.5rem 0; } }

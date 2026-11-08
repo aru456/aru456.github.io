@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="noindex" />
+        <title>404 · Page not found · Sai Aravind Yanamadala</title>
+        <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <script>
+            (function () {
+                var t = null;
+                try { t = localStorage.getItem('theme'); } catch (e) {}
+                if (!t) t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                document.documentElement.setAttribute('data-theme', t);
+            })();
+        </script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@700&family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+        <link href="/css/modern.css" rel="stylesheet" />
+        <style>
+            body { margin: 0; min-height: 100vh; display: grid; grid-template-columns: minmax(0, 1fr); place-items: center; padding: 2rem 1rem; box-sizing: border-box; }
+            .nf { width: 100%; max-width: 40rem; min-width: 0; }
+            .nf .tl { white-space: pre-wrap; overflow-wrap: anywhere; }
+            .nf-code { font-family: var(--font-display); font-size: clamp(4rem, 18vw, 7rem); line-height: 0.9; color: var(--text); margin: 0 0 0.25rem; }
+            .nf-code span { color: var(--accent); }
+            .nf-lead { color: var(--muted); margin: 0 0 1.5rem; }
+            .nf .terminal-body a { color: var(--term-key); text-decoration: none; }
+            .nf .terminal-body a:hover { text-decoration: underline; }
+            .err { color: #ff7b72; }
+            .nf-actions { margin-top: 1.5rem; display: flex; gap: 0.6rem; flex-wrap: wrap; }
+        </style>
+    </head>
+    <body>
+        <main class="nf">
+            <p class="nf-code">4<span>0</span>4</p>
+            <p class="nf-lead">This page doesn't exist, but the rest of the portfolio does.</p>
+            <div class="terminal">
+                <div class="terminal-bar">
+                    <span class="tdot r"></span><span class="tdot y"></span><span class="tdot g"></span>
+                    <span class="terminal-title">aravind@nyc: ~</span>
+                </div>
+<pre class="terminal-body"><code><span class="tl"><span class="tp">$</span> cd <span id="path">/missing</span></span>
+<span class="tl"><span class="err">bash: cd: <span id="path2">/missing</span>: No such file or directory</span></span>
+<span class="tl"><span class="tp">$</span> ls ~</span>
+<span class="tl"><a href="/#about">about</a>  <a href="/#experience">experience</a>  <a href="/#education">education</a>  <a href="/#skills">skills</a>  <a href="/#projects">projects</a>  <a href="/#awards">awards</a></span>
+<span class="tl"><span class="tp">$</span> <span class="cursor"></span></span></code></pre>
+            </div>
+            <div class="nf-actions">
+                <a class="btn-x btn-x-primary" href="/">cd ~ &nbsp;(back to portfolio)</a>
+            </div>
+        </main>
+        <script>
+            (function () {
+                var p = decodeURIComponent(location.pathname).slice(0, 60) || '/';
+                document.getElementById('path').textContent = p;
+                document.getElementById('path2').textContent = p;
+            })();
+        </script>
+    </body>
+</html>
