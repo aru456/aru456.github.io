@@ -29,6 +29,7 @@
             .nf .terminal-body a { color: var(--term-key); text-decoration: none; }
             .nf .terminal-body a:hover { text-decoration: underline; }
             .err { color: #ff7b72; }
+            .cmt { color: var(--muted); }
             .nf-actions { margin-top: 1.5rem; display: flex; gap: 0.6rem; flex-wrap: wrap; }
         </style>
     </head>
@@ -45,6 +46,7 @@
 <span class="tl"><span class="err">bash: cd: <span id="path2">/missing</span>: No such file or directory</span></span>
 <span class="tl"><span class="tp">$</span> ls ~</span>
 <span class="tl"><a href="/#about">about</a>  <a href="/#experience">experience</a>  <a href="/#education">education</a>  <a href="/#skills">skills</a>  <a href="/#projects">projects</a>  <a href="/#awards">awards</a></span>
+<span class="tl" id="auto"><span class="tp">$</span> cd ~ <span class="cmt"># going home in <span id="secs">10</span>s · <a href="#" id="stay">stay here</a></span></span>
 <span class="tl"><span class="tp">$</span> <span class="cursor"></span></span></code></pre>
             </div>
             <div class="nf-actions">
@@ -56,6 +58,19 @@
                 var p = decodeURIComponent(location.pathname).slice(0, 60) || '/';
                 document.getElementById('path').textContent = p;
                 document.getElementById('path2').textContent = p;
+
+                // Auto-redirect home after 10s; "stay here" cancels
+                var left = 10, secs = document.getElementById('secs');
+                var timer = setInterval(function () {
+                    left -= 1;
+                    secs.textContent = left;
+                    if (left <= 0) { clearInterval(timer); location.replace('/'); }
+                }, 1000);
+                document.getElementById('stay').addEventListener('click', function (e) {
+                    e.preventDefault();
+                    clearInterval(timer);
+                    document.getElementById('auto').innerHTML = '<span class="tp">$</span> <span class="cmt"># ok, staying put</span>';
+                });
             })();
         </script>
     </body>
