@@ -546,3 +546,9 @@ a.award:hover .ext { opacity: 1; color: var(--accent); transform: translate(1px,
 }
 .highlights li > svg { color: var(--accent); width: 1rem; flex-shrink: 0; margin-top: 0.3rem; }
 .highlights strong { color: var(--text); }
+/* Keep the full intro (incl. stats) within one 900px-tall desktop screen */
+@media (min-width: 992px) {
+  .about-copy { margin-top: 2.25rem; }
+  .stats { margin-top: 1.5rem; }
+  .highlights { gap: 0.45rem; }
+}

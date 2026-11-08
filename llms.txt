@@ -1,6 +1,6 @@
 # Sai Aravind Yanamadala
 
-> Backend software engineer at Intuit in New York with 3+ years of experience building production systems, working on fintech backend services for Intuit Payroll. Builds and owns scalable backend services in Java and Node.js on AWS, with event-driven systems on Kafka, and champions AI-assisted development on the team. MS in Computer Science from New York University (4.0 GPA); B.Tech in Computer Science from IIT Indore.
+> Backend software engineer at Intuit in New York with 3+ years of experience building production systems, working on fintech backend services for QuickBooks Online (QBO) Payroll. Builds and owns scalable backend services in Java and Node.js on AWS, with event-driven systems on Kafka, and champions AI-assisted development on the team. MS in Computer Science from New York University (4.0 GPA); B.Tech in Computer Science from IIT Indore.
 
 Also known as: Aravind Yanamadala, Sai Aravind.
 
@@ -15,7 +15,7 @@ Also known as: Aravind Yanamadala, Sai Aravind.
 
 ## Experience
 
-- **Intuit**, Software Engineer 1, Backend (Feb 2026 to present, New York, hybrid): backend services for Intuit Payroll, end to end from API design to production; cross-team delivery across services with deep upstream and downstream dependencies; AI-assisted development with reusable AI skills and workflows; Kafka event-driven flows; Kubernetes deployments through Jenkins and ArgoCD.
+- **Intuit**, Software Engineer 1, Backend (Feb 2026 to present, New York, hybrid): backend services for QuickBooks Online (QBO) Payroll, end to end from API design to production; idempotent, retry-safe APIs and Kafka event flows for consistent payroll processing; secure handling of sensitive employee data (PII); services built for payroll-run peaks (pay days, quarter-end, year-end); cross-team delivery across services with deep upstream and downstream dependencies; AI-assisted development with reusable AI skills and workflows; Kafka event-driven flows; Kubernetes deployments through Jenkins and ArgoCD.
 - **LOCOMeX, Inc**, Software Engineer Intern (Feb 2025 to Jan 2026): ESG scoring platform in Django with async PDF extraction and LLM processing (Claude 3 Haiku and LLaMA 3.2 1B via AWS Bedrock), cutting response time by 35%; PDF/CSV report exports and automated delivery via AWS SES.
 - **Publicis Sapient**, Software Development Engineer (Associate) 2 (May 2022 to Aug 2023): reactive Spring WebFlux and GraphQL services for Albertsons Health & Wellness; up to 30% lower API latency with Redis caching; test coverage raised from 70% to 90%.
 
