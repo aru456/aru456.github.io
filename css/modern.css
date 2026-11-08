@@ -159,9 +159,6 @@ section.resume-section { display: block; min-height: auto; max-width: 76rem; pad
   #sideNav .navbar-nav .nav-item .nav-link { text-align: left !important; padding: 0.55rem 0.25rem !important; }
   #sideNav .navbar-toggler { border-color: rgba(255, 255, 255, 0.15); margin-right: 0; }
 }
-.nav-social { gap: 1.1rem; justify-content: center; margin: 0 auto 2rem; }
-.nav-social a { color: var(--nav-text); font-size: 1.1rem; transition: color 0.2s ease, transform 0.2s ease; }
-.nav-social a:hover { color: #fff; transform: translateY(-2px); }
 .brand-mobile { font-family: var(--font-mono); font-size: 1rem; font-weight: 500; letter-spacing: 0; }
 .brand-prompt { color: var(--accent); }
 
@@ -254,8 +251,7 @@ section.resume-section { display: block; min-height: auto; max-width: 76rem; pad
 .btn-x-primary { background: var(--accent); border-color: var(--accent); color: #fff; }
 .btn-x-primary:hover { background: var(--accent-strong); border-color: var(--accent-strong); color: #fff; }
 :root[data-theme="dark"] .btn-x-primary, :root[data-theme="dark"] .btn-x-primary:hover { color: #15171b; }
-.btn-copy .copy-label { font-family: var(--font-mono); font-size: 0.85rem; font-weight: 500; }
-.btn-copy.copied { border-color: #22c55e; color: #16a34a; }
+.btn-copy.copied { border-color: #22c55e !important; color: #16a34a !important; }
 
 /* Terminal */
 .terminal {
@@ -498,11 +494,6 @@ a.award:hover { border-color: var(--accent); transform: translateY(-2px); color:
 /* ---------- Brand color on hover (icons stay monochrome at rest) ---------- */
 :root { --brand-github: #181717; --brand-linkedin: #0a66c2; --brand-leetcode: #e8920d; --brand-email: #ea4335; }
 :root[data-theme="dark"] { --brand-github: #f0f6fc; --brand-linkedin: #4a9fef; --brand-leetcode: #ffa116; --brand-email: #f26b5f; }
-/* sidebar is always dark, so it uses the light-on-dark variants */
-.nav-social a[href*="github.com"]:hover { color: #f0f6fc; }
-.nav-social a[href*="linkedin.com"]:hover { color: #4a9fef; }
-.nav-social a[href*="leetcode.com"]:hover { color: #ffa116; }
-.nav-social a[href^="mailto:"]:hover { color: #f26b5f; }
 .hero-actions a[href*="github.com"]:hover { color: var(--brand-github); border-color: var(--brand-github); }
 .hero-actions a[href*="linkedin.com"]:hover { color: var(--brand-linkedin); border-color: var(--brand-linkedin); }
 .hero-actions a[href*="leetcode.com"]:hover { color: var(--brand-leetcode); border-color: var(--brand-leetcode); }
@@ -556,3 +547,32 @@ a.award:hover .ext { opacity: 1; color: var(--accent); transform: translate(1px,
   .stats { margin-top: 1.5rem; }
   .highlights { gap: 0.45rem; }
 }
+
+/* Hero: one primary button + quiet icon links (fewer boxes) */
+.hero-actions { align-items: center; gap: 0.9rem; }
+.icon-links { display: flex; align-items: center; gap: 0.25rem; }
+.btn-icon {
+  position: relative; display: inline-grid; place-items: center;
+  width: 2.75rem; height: 2.75rem; padding: 0; border-radius: 10px;
+  border: 1px solid transparent; background: transparent; color: var(--muted);
+  font-size: 1.2rem; cursor: pointer; text-decoration: none;
+  transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, transform 0.15s ease;
+}
+.btn-icon:hover, .btn-icon:focus-visible { background: var(--surface); border-color: var(--border); color: var(--text); transform: translateY(-2px); }
+/* tooltip */
+.btn-icon::after {
+  content: attr(data-tip); position: absolute; bottom: calc(100% + 8px); left: 50%; transform: translate(-50%, 4px);
+  padding: 0.3rem 0.55rem; border-radius: 6px; background: var(--text); color: var(--bg);
+  font: 500 0.75rem/1.2 var(--font-mono); white-space: nowrap; pointer-events: none;
+  opacity: 0; transition: opacity 0.15s ease, transform 0.15s ease; z-index: 5;
+}
+.btn-icon:hover::after, .btn-icon:focus-visible::after, .btn-icon.copied::after { opacity: 1; transform: translate(-50%, 0); }
+/* status line: no pill box, just dot + text */
+.status-pill { border: 0; background: transparent; padding: 0; border-radius: 0; }
+@media (max-width: 767.98px) { .status-pill { border-radius: 0; } }
+
+/* Sidebar footer: email instead of duplicate icons */
+.nav-contact { flex-direction: column; align-items: center; gap: 0.3rem; margin: 0 auto 2rem; text-align: center; }
+.nav-contact-label { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: #5c646d; }
+.nav-contact a { font-family: var(--font-mono); font-size: 0.8rem; color: var(--nav-text); text-decoration: none; transition: color 0.2s ease; }
+.nav-contact a:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }

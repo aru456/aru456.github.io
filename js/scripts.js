@@ -31,17 +31,16 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Copy email to clipboard (falls back to mailto)
+    // Copy email to clipboard (falls back to mailto); tooltip confirms
     document.querySelectorAll('.btn-copy').forEach((btn) => {
-        const label = btn.querySelector('.copy-label');
-        const original = label.textContent;
+        const tip = btn.dataset.tip;
         btn.addEventListener('click', async () => {
             const email = btn.dataset.copy;
             try {
                 await navigator.clipboard.writeText(email);
                 btn.classList.add('copied');
-                label.textContent = 'copied to clipboard ✓';
-                setTimeout(() => { btn.classList.remove('copied'); label.textContent = original; }, 1800);
+                btn.dataset.tip = 'Copied! ✓';
+                setTimeout(() => { btn.classList.remove('copied'); btn.dataset.tip = tip; }, 1800);
             } catch (e) {
                 window.location.href = 'mailto:' + email;
             }
